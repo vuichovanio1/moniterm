@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moni-term.bg/sitemap.xml
+
+# AI crawlers — allow indexing for LLM discovery
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
