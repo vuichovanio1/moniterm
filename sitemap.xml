@@ -1,697 +1,703 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://moni-term.bg/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/za-nas.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/za-nas.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/kontakt.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/kontakt.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/llms.txt</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/oferta.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/llms.txt</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/llms-full.txt</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/llms-full.txt</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/llms-faq.txt</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/llms-faq.txt</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/sofia.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/sofia.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/kostinbrod.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/kostinbrod.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/slivnitsa.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/slivnitsa.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/dragoman.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/dragoman.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/godech.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/godech.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/bozhurishte.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/bozhurishte.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/svoge.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/svoge.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/elin-pelin.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/elin-pelin.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/bankya.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/bankya.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/novi-iskar.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/novi-iskar.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazifikaciya/pernik.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazifikaciya/pernik.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/gazovi-kotli/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/gazovi-kotli/pernik.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/otoplenie/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/sofia.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/sofia.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/kostinbrod.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/kostinbrod.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/slivnitsa.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/slivnitsa.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/dragoman.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/dragoman.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/godech.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/godech.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/bozhurishte.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/bozhurishte.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/svoge.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/svoge.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/elin-pelin.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/elin-pelin.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/bankya.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/bankya.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/novi-iskar.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/novi-iskar.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/otoplenie/pernik.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/pernik.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/podovo-otoplenie/pernik.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moni-term.bg/termopompi/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/sofia.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/sofia.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/kostinbrod.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/kostinbrod.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/slivnitsa.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/slivnitsa.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/dragoman.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/dragoman.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/godech.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/godech.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/bozhurishte.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/bozhurishte.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/svoge.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/svoge.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/elin-pelin.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/elin-pelin.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/bankya.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/bankya.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/novi-iskar.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/novi-iskar.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/termopompi/pernik.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/otoplenie/pernik.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/sofia.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/sofia.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/kostinbrod.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/kostinbrod.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/slivnitsa.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/slivnitsa.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/dragoman.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/dragoman.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/godech.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/godech.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/bozhurishte.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/bozhurishte.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/svoge.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/svoge.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/elin-pelin.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/elin-pelin.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/bankya.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/bankya.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/novi-iskar.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/novi-iskar.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/omekotyavane-na-voda/pernik.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/podovo-otoplenie/pernik.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/sofia.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/sofia.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/kostinbrod.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/kostinbrod.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/slivnitsa.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/slivnitsa.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/dragoman.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/dragoman.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/godech.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/godech.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/bozhurishte.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/bozhurishte.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/svoge.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/svoge.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/elin-pelin.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/elin-pelin.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/bankya.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/bankya.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/novi-iskar.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/novi-iskar.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/hidroforni-sistemi/pernik.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/termopompi/pernik.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/sofia.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/sofia.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/kostinbrod.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/kostinbrod.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/slivnitsa.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/slivnitsa.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/dragoman.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/dragoman.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/godech.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/godech.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/bozhurishte.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/bozhurishte.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/svoge.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/svoge.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/elin-pelin.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/elin-pelin.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/bankya.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/bankya.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/novi-iskar.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/novi-iskar.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/vodni-pompi/pernik.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/pernik.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/peletni-kotli/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/klimatiizaciya/</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/sofia.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/kostinbrod.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/slivnitsa.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/dragoman.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/godech.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/bozhurishte.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/svoge.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/elin-pelin.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/bankya.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/novi-iskar.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/pernik.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/sondazh-pompa-vodochurpene.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/sofia.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/kostinbrod.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/slivnitsa.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/dragoman.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/godech.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/bozhurishte.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/svoge.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/elin-pelin.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/bankya.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/novi-iskar.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/pernik.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/peletni-kotli/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/klimatiizaciya/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/sondazh-pompa-vodochurpene.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/propan-butan-rezervuari-1750-2700.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/propan-butan-rezervuari-1750-2700.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/dostavka-rezervuari-2x1750.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/dostavka-rezervuari-2x1750.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/podzemni-rezervuari-sedmichna-dostavka.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/podzemni-rezervuari-sedmichna-dostavka.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/diamanteno-probivane-stomanobeton.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/diamanteno-probivane-stomanobeton.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/diamanteno-probivane-otvori.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/diamanteno-probivane-otvori.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/gazov-kotel-immergas.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/gazov-kotel-immergas.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/omekotitel-clack-hidrofor.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/omekotitel-clack-hidrofor.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/podovo-otoplenie-kolektor.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/podovo-otoplenie-kolektor.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/termopompa-bosch.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/termopompa-bosch.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://moni-term.bg/proekti/hidrofor-grundfos.html</loc>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/hidrofor-grundfos.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

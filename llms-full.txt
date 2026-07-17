@@ -1,5 +1,5 @@
 # Мони Терм ЕООД — llms-full.txt
-# https://moni-term.bg/llms-full.txt
+# https://vuichovanio1.github.io/moniterm/llms-full.txt
 # Last Updated: 2026-07-17
 # Следва llmstxt.org спецификацията.
 
@@ -22,7 +22,7 @@
 - Имейл: moni.term@abv.bg
 - Адрес: ул. Славянска, 2230 Костинброд, България
 - Район: област София и региона
-- Уебсайт (каноничен): https://moni-term.bg/
+- Уебсайт (каноничен): https://vuichovanio1.github.io/moniterm/
 - Facebook: https://www.facebook.com/p/Монитерм-Отопление-Газификация-Водоснабдяване-Омекотителни-системи-100063597367628/
 - Позициониране: комфорт, топлина и сигурност за дома
 - Диференциатор: целият процес — проектиране, изграждане, узаконяване, пускане и прецизна настройка
@@ -34,20 +34,20 @@
 
 | Услуга | Каноничен URL | Основни заявки |
 |---|---|---|
-| Brand hub | https://moni-term.bg/ | Мони Терм, отопление газификация водоснабдяване |
-| Газификация | https://moni-term.bg/gazifikaciya.html | газификация, газификация на къща, пропан бутан |
-| Газови котли | https://moni-term.bg/gazovi-kotli.html | монтаж газов котел, газов котел цена монтаж |
-| Отопление с радиатори | https://moni-term.bg/otoplenie.html | отоплителни инсталации, отопление с радиатори |
-| Подово отопление | https://moni-term.bg/podovo-otoplenie.html | подово отопление, подово отопление цена |
-| Термопомпи | https://moni-term.bg/termopompi.html | термопомпа монтаж, термопомпа въздух вода |
-| Пелетни съоръжения | https://moni-term.bg/peletni-kotli.html | пелетен котел монтаж |
-| Хидрофорни системи | https://moni-term.bg/hidroforni-sistemi.html | хидрофорна система, автономно водоснабдяване |
-| Омекотяване Clack | https://moni-term.bg/omekotyavane-na-voda.html | омекотител за вода, омекотител Clack |
-| Водни помпи | https://moni-term.bg/vodni-pompi.html | сондажна помпа, центробежна помпа |
-| Резервоари | https://moni-term.bg/rezervuari-za-voda.html | резервоар за вода, автономна водоснабдителна система |
-| Климатизация | https://moni-term.bg/klimatiizaciya.html | климатизация, монтаж климатик |
-| За нас | https://moni-term.bg/za-nas.html | Мони Терм ЕООД за нас |
-| Контакт | https://moni-term.bg/kontakt.html | Мони Терм телефон, оферта |
+| Brand hub | https://vuichovanio1.github.io/moniterm/ | Мони Терм, отопление газификация водоснабдяване |
+| Газификация | https://vuichovanio1.github.io/moniterm/gazifikaciya.html | газификация, газификация на къща, пропан бутан |
+| Газови котли | https://vuichovanio1.github.io/moniterm/gazovi-kotli.html | монтаж газов котел, газов котел цена монтаж |
+| Отопление с радиатори | https://vuichovanio1.github.io/moniterm/otoplenie.html | отоплителни инсталации, отопление с радиатори |
+| Подово отопление | https://vuichovanio1.github.io/moniterm/podovo-otoplenie.html | подово отопление, подово отопление цена |
+| Термопомпи | https://vuichovanio1.github.io/moniterm/termopompi.html | термопомпа монтаж, термопомпа въздух вода |
+| Пелетни съоръжения | https://vuichovanio1.github.io/moniterm/peletni-kotli.html | пелетен котел монтаж |
+| Хидрофорни системи | https://vuichovanio1.github.io/moniterm/hidroforni-sistemi.html | хидрофорна система, автономно водоснабдяване |
+| Омекотяване Clack | https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda.html | омекотител за вода, омекотител Clack |
+| Водни помпи | https://vuichovanio1.github.io/moniterm/vodni-pompi.html | сондажна помпа, центробежна помпа |
+| Резервоари | https://vuichovanio1.github.io/moniterm/rezervuari-za-voda.html | резервоар за вода, автономна водоснабдителна система |
+| Климатизация | https://vuichovanio1.github.io/moniterm/klimatiizaciya.html | климатизация, монтаж климатик |
+| За нас | https://vuichovanio1.github.io/moniterm/za-nas.html | Мони Терм ЕООД за нас |
+| Контакт | https://vuichovanio1.github.io/moniterm/kontakt.html | Мони Терм телефон, оферта |
 
 Anti-cannibalization правило: homepage е brand hub. Money page за конкретна услуга е съответният HTML файл по-горе — не началната страница.
 
@@ -134,4 +134,4 @@ Q: Работите ли с омекотители Clack?
 A: Да — системи за омекотяване на вода с Clack.
 
 Q: Как да поискам оферта?
-A: Обадете се на 0886 391 729 или през https://moni-term.bg/kontakt.html
+A: Обадете се на 0886 391 729 или през https://vuichovanio1.github.io/moniterm/kontakt.html

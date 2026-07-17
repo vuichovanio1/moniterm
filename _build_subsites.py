@@ -6,7 +6,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(r"C:\repos\moniterm")
-DOMAIN = "https://moni-term.bg"
+DOMAIN = "https://vuichovanio1.github.io/moniterm"
+BASE = "/moniterm"  # GitHub Pages project path (root-absolute browser URLs)
 TEL = "+359886391729"
 PHONE = "0886 391 729"
 EMAIL = "moni.term@abv.bg"
@@ -950,18 +951,21 @@ def project_page(pr: dict) -> str:
 """
 
 
-def redirect_page(target: str) -> str:
+def redirect_page(path: str) -> str:
+    """path is site path like /gazifikaciya/ (without BASE prefix)."""
+    abs_url = f"{DOMAIN}{path}"
+    browser = f"{BASE}{path}"
     return f"""<!DOCTYPE html>
 <html lang="bg">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url={target}">
-  <link rel="canonical" href="{DOMAIN}{target}">
+  <meta http-equiv="refresh" content="0; url={browser}">
+  <link rel="canonical" href="{abs_url}">
   <title>Преместване…</title>
-  <script>location.replace("{target}");</script>
+  <script>location.replace("{browser}");</script>
 </head>
 <body>
-  <p>Страницата е преместена: <a href="{target}">{target}</a></p>
+  <p>Страницата е преместена: <a href="{browser}">{abs_url}</a></p>
 </body>
 </html>
 """
@@ -990,6 +994,7 @@ def main() -> None:
         ("/proekti/", "weekly", "0.85"),
         ("/za-nas.html", "yearly", "0.5"),
         ("/kontakt.html", "yearly", "0.7"),
+        ("/oferta.html", "monthly", "0.75"),
         ("/llms.txt", "monthly", "0.2"),
         ("/llms-full.txt", "monthly", "0.2"),
         ("/llms-faq.txt", "monthly", "0.2"),
