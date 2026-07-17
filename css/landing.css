@@ -386,6 +386,26 @@ p {
   color: var(--paper);
 }
 
+.lp-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.lp-shots figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+}
+
+.lp-shots img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Footer */
 .lp-foot {
   padding: 2rem 0 1.5rem;
