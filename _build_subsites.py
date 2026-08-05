@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 from pathlib import Path
 
 ROOT = Path(r"C:\repos\moniterm")
@@ -942,7 +943,7 @@ def project_page(pr: dict) -> str:
 
 
 def redirect_page(path: str) -> str:
-    """path is site path like /gazifikaciya/ (without BASE prefix)."""
+    """path is site path like /gazovi-kotli/ (without BASE prefix)."""
     abs_url = f"{DOMAIN}{path}"
     browser = f"{BASE}{path}"
     return f"""<!DOCTYPE html>
@@ -997,30 +998,37 @@ def main() -> None:
         hub_path = ROOT / s["slug"] / "index.html"
         write(hub_path, service_hub(s))
         sitemap_urls.append((f"/{s['slug']}/", "monthly", "0.9"))
-        old = ROOT / f"{s['slug']}.html"
-        write(old, redirect_page(f"/{s['slug']}/"))
+        # Convenience redirect: /slug.html → /slug/
+        write(ROOT / f"{s['slug']}.html", redirect_page(f"/{s['slug']}/"))
         if s["geo"]:
             for c in CITIES:
                 write(ROOT / s["slug"] / f"{c['slug']}.html", service_geo(s, c))
                 sitemap_urls.append((f"/{s['slug']}/{c['slug']}.html", "monthly", "0.8"))
 
-    # Legacy redirects (removed services → closest new hub)
-    legacy = {
-        "gazifikaciya": "/rezervuari-propan-butan/",
-        "otoplenie": "/gazovi-kotli/",
-        "podovo-otoplenie": "/gazovi-kotli/",
-        "termopompi": "/gazovi-kotli/",
-        "peletni-kotli": "/gazovi-kotli/",
-        "hidroforni-sistemi": "/vodni-pompi/",
-        "klimatiizaciya": "/klimatici/",
-        "rezervuari-za-voda": "/vodni-pompi/",
-    }
-    for slug, target in legacy.items():
-        write(ROOT / f"{slug}.html", redirect_page(target))
-        # Keep folder index as redirect if old hub folder remains
-        folder = ROOT / slug
-        if folder.exists() and slug not in active_slugs:
-            write(folder / "index.html", redirect_page(target))
+    # Remove obsolete service folders/files that are not in SERVICES
+    for path in ROOT.iterdir():
+        if not path.is_dir():
+            continue
+        if path.name in {"css", "js", "images", "proekti"} or path.name.startswith("."):
+            continue
+        if path.name not in active_slugs:
+            shutil.rmtree(path)
+            print("Removed dir", path.name)
+
+    for slug in (
+        "gazifikaciya",
+        "otoplenie",
+        "podovo-otoplenie",
+        "termopompi",
+        "peletni-kotli",
+        "hidroforni-sistemi",
+        "klimatiizaciya",
+        "rezervuari-za-voda",
+    ):
+        flat = ROOT / f"{slug}.html"
+        if flat.exists():
+            flat.unlink()
+            print("Removed", flat.name)
 
     # Projects
     write(ROOT / "proekti" / "index.html", projects_hub())
