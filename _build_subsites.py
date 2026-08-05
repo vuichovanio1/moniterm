@@ -28,13 +28,27 @@ CITIES = [
     {"slug": "novi-iskar", "name": "Нови Искър", "locative": "в Нови Искър", "genitive": "Нови Искър", "region": "район на София"},
 ]
 
+# Unique local notes for geo pages (anti-doorway)
+CITY_NOTES = {
+    "sofia": "В София често работим по апартаменти и къщи в кварталите с по-лесен достъп за техника; важна е координацията с етажната собственост и паркирането на обекта.",
+    "kostinbrod": "Костинброд е нашата база — огледите тук и в близките села са най-бързи, с кратък път за екипа и оборудването.",
+    "slivnitsa": "В Сливница и околностите често комбинираме газови или водни работи с оглед в същия ден — удобно разстояние от Костинброд.",
+    "dragoman": "Около Драгоман обектите често са къщи и вили; планираме доставка и монтаж според достъпа на терена.",
+    "godech": "За Годеч и селата наоколо уточняваме предварително трасето и времето за път, за да приключим монтажа без излишни посещения.",
+    "bozhurishte": "Божурище е близо до София — подходящо за бърз оглед и монтаж в работни дни без дълго пътуване.",
+    "svoge": "В Своге и по Искърското дефиле отчитаме терена и достъпа; огледът предварително спестява изненади при монтажа.",
+    "elin-pelin": "Елин Пелин и индустриалната зона често изискват по-големи мощности или по-дълги трасета — оразмеряваме след оглед.",
+    "bankya": "В Банкя преобладават жилищни обекти; работим с внимание към шума и графика на живущите.",
+    "novi-iskar": "Нови Искър и северните квартали са удобни за дневен монтаж от Костинброд с ясен прозорец за доставка.",
+}
+
 SERVICES = [
     {
         "slug": "gazovi-kotli",
         "nav": "kotli",
         "name": "Газови котли",
         "h1_hub": "Монтаж на газови котли",
-        "title_hub": "Монтаж на газов котел София и област | Мони Терм",
+        "title_hub": "Монтаж на газов котел | София област — Мони Терм",
         "keyword": "монтаж газов котел",
         "keyword_long": "газов котел монтаж",
         "desc_hub": "Монтаж на газови котли в София и София област. Доставка, връзка към инсталацията и настройка — Мони Терм ЕООД. Тел. 0886 391 729.",
@@ -59,7 +73,7 @@ SERVICES = [
         "nav": "rezervuari",
         "name": "Резервоари пропан-бутан",
         "h1_hub": "Доставка и монтаж на резервоари за пропан-бутан",
-        "title_hub": "Резервоари пропан-бутан София област | Мони Терм",
+        "title_hub": "Резервоари пропан-бутан | София област — Мони Терм",
         "keyword": "резервоар пропан-бутан",
         "keyword_long": "подземен резервоар газ",
         "desc_hub": "Доставка и монтаж на резервоари за пропан-бутан в София и София област. Подземни резервоари 1750 и 2700 л — Мони Терм ЕООД.",
@@ -84,17 +98,17 @@ SERVICES = [
         "nav": "trasea",
         "name": "Газови трасета",
         "h1_hub": "Изграждане на газови трасета",
-        "title_hub": "Газови трасета София и област | Мони Терм",
+        "title_hub": "Газови трасета | София област — Мони Терм",
         "keyword": "газови трасета",
         "keyword_long": "газова тръбна мрежа",
-        "desc_hub": "Изграждане на газови трасета в София и София област. Тръбен път, връзки и подготовка за узаконяване — Мони Терм ЕООД.",
+        "desc_hub": "Изграждане на газови трасета в София област. Тръбен път, връзки и изпитания — Мони Терм ЕООД.",
         "lead": "Сигурни газови трасета за сгради и обекти — от проекта до изпълнението на място.",
         "image": "moni8.jpg",
         "gallery": ["moni8.jpg", "moni16.jpg", "moni4.jpg", "moni2.jpg"],
         "bullets": [
             "Външни и вътрешни газови трасета",
             "Качествени материали и чист монтаж",
-            "Подготовка за изпитания и узаконяване",
+            "Изпитания на тръбния път",
             "Координация с котли и резервоари",
         ],
         "faqs": [
@@ -109,7 +123,7 @@ SERVICES = [
         "nav": "uzakonyavane",
         "name": "Узаконяване на газови инсталации",
         "h1_hub": "Узаконяване на сградни газови инсталации",
-        "title_hub": "Узаконяване газова инсталация София област | Мони Терм",
+        "title_hub": "Узаконяване на газова инсталация | София област — Мони Терм",
         "keyword": "узаконяване газова инсталация",
         "keyword_long": "узаконяване сградна газова инсталация",
         "desc_hub": "Узаконяване на сградни газови инсталации в София и София област. Документация и съдействие — Мони Терм ЕООД. Тел. 0886 391 729.",
@@ -134,7 +148,7 @@ SERVICES = [
         "nav": "pompi",
         "name": "Водни помпи",
         "h1_hub": "Водни помпи и помпено оборудване",
-        "title_hub": "Водни помпи и помпено оборудване София област | Мони Терм",
+        "title_hub": "Водни помпи и помпено оборудване | София област — Мони Терм",
         "keyword": "водни помпи",
         "keyword_long": "сондажна помпа монтаж",
         "desc_hub": "Водни помпи и помпено оборудване в София и София област. Сондажни, напорни и центробежни помпи — Мони Терм ЕООД.",
@@ -159,22 +173,22 @@ SERVICES = [
         "nav": "voda-trasea",
         "name": "Водопроводни трасета",
         "h1_hub": "Изграждане на водопроводни трасета",
-        "title_hub": "Водопроводни трасета София област | Мони Терм",
+        "title_hub": "Водопроводни трасета | София област — Мони Терм",
         "keyword": "водопроводни трасета",
         "keyword_long": "изграждане водопровод",
-        "desc_hub": "Изграждане на водопроводни трасета в София и София област. Тръбни мрежи за вода — Мони Терм ЕООД. Тел. 0886 391 729.",
-        "lead": "Надеждни водопроводни трасета за нови обекти и обновяване на съществуващи инсталации.",
+        "desc_hub": "Изграждане на нови водопроводни трасета в София област. Тръбни мрежи от източника до обекта — Мони Терм ЕООД. Тел. 0886 391 729.",
+        "lead": "Нови водопроводни трасета и тръбни мрежи за къщи и обекти — не само локални ВИК връзки.",
         "image": "moni19.jpg",
         "gallery": ["moni19.jpg", "moni12.jpg", "moni9.jpg", "moni18.jpg"],
         "bullets": [
-            "Външни и вътрешни водопроводни трасета",
-            "Връзка към помпи, резервоари и омекотители",
-            "Качествени тръби и фитинги",
-            "Изпитания и пускане",
+            "Изграждане на външни и вътрешни водопроводни трасета",
+            "Тръбен път към сондаж, резервоар или сградна мрежа",
+            "Качествени тръби, фитинги и изпитания",
+            "Връзка към помпи и омекотители при нужда",
         ],
         "faqs": [
+            ("Каква е разликата с ВИК услуги?", "Водопроводните трасета са изграждане на тръбна мрежа. ВИК услугите покриват връзки, ремонти и локални монтажи."),
             ("Правите ли трасе към сондаж?", "Да — често заедно с помпено оборудване."),
-            ("Работите ли в София област?", "Да — Костинброд, Сливница, Драгоман, Годеч и региона."),
             ("Как да заявя?", "0886 391 729"),
         ],
         "geo": True,
@@ -184,7 +198,7 @@ SERVICES = [
         "nav": "klimatici",
         "name": "Климатици",
         "h1_hub": "Монтаж и доставка на климатици",
-        "title_hub": "Монтаж на климатици София и област | Мони Терм",
+        "title_hub": "Монтаж на климатици | София област — Мони Терм",
         "keyword": "монтаж климатик",
         "keyword_long": "доставка климатик монтаж",
         "desc_hub": "Доставка и монтаж на климатици в София и София област. Професионален монтаж — Мони Терм ЕООД. Тел. 0886 391 729.",
@@ -209,10 +223,10 @@ SERVICES = [
         "nav": "soft",
         "name": "Омекотителни системи",
         "h1_hub": "Омекотителни системи за варовита вода",
-        "title_hub": "Омекотител за варовита вода София област | Мони Терм",
+        "title_hub": "Омекотители за вода | София област — Мони Терм",
         "keyword": "омекотител за вода",
         "keyword_long": "омекотителна система варовита вода",
-        "desc_hub": "Омекотителни системи за варовита вода в София и София област. Монтаж и настройка — Мони Терм ЕООД. Тел. 0886 391 729.",
+        "desc_hub": "Омекотителни системи за варовита вода в София област. Монтаж и настройка — Мони Терм ЕООД. Тел. 0886 391 729.",
         "lead": "Защита от варовик за котли, бойлери и уреди — омекотителни системи за София и региона.",
         "image": "moni18.jpg",
         "gallery": ["moni18.jpg", "moni9.jpg", "moni19.jpg"],
@@ -233,22 +247,22 @@ SERVICES = [
         "slug": "vik-uslugi",
         "nav": "vik",
         "name": "ВИК услуги",
-        "h1_hub": "ВИК услуги",
-        "title_hub": "ВИК услуги София и София област | Мони Терм",
+        "h1_hub": "ВИК услуги — връзки, ремонти и локален монтаж",
+        "title_hub": "ВИК услуги | София област — Мони Терм",
         "keyword": "ВИК услуги",
         "keyword_long": "ВИК монтаж ремонт",
-        "desc_hub": "ВИК услуги в София и София област: водопровод, връзки, ремонти и монтаж — Мони Терм ЕООД. Тел. 0886 391 729.",
-        "lead": "Практични ВИК решения за дома и обекта — монтаж, връзки и отстраняване на проблеми.",
+        "desc_hub": "ВИК услуги в София област: връзки, ремонти и локален монтаж — не изграждане на нови магистрални водопроводи. Мони Терм ЕООД. Тел. 0886 391 729.",
+        "lead": "Локални ВИК работи на обекта — връзки, арматура, течове и ремонти. За нови тръбни мрежи вижте водопроводни трасета.",
         "image": "moni19.jpg",
         "gallery": ["moni19.jpg", "moni9.jpg", "moni12.jpg", "moni18.jpg"],
         "bullets": [
-            "ВИК монтаж и връзки",
-            "Работа по водопроводни инсталации",
-            "Координация с помпи и омекотители",
-            "Бърз оглед в региона на София",
+            "ВИК връзки и монтаж на арматура",
+            "Отстраняване на течове и запушвания",
+            "Санитарни и локални водопроводни връзки",
+            "Координация с помпи и омекотители при нужда",
         ],
         "faqs": [
-            ("Какви ВИК услуги правите?", "Монтаж, връзки, трасета и свързани ремонти — уточняваме след оглед."),
+            ("Каква е разликата с водопроводни трасета?", "ВИК услугите са локални връзки и ремонти. Водопроводните трасета са изграждане на нова тръбна мрежа."),
             ("Работите ли извън Костинброд?", "Да — София и София област."),
             ("Как да се обадя?", "0886 391 729"),
         ],
@@ -262,7 +276,7 @@ SERVICES = [
         "title_hub": "Електродифузно заваряване РЕ-HD | Мони Терм",
         "keyword": "електродифузно заваряване",
         "keyword_long": "заваряване РЕ-HD полиетилен",
-        "desc_hub": "Електродифузно заваряване на РЕ-HD полиетилен за газови и водопроводни трасета. Мони Терм ЕООД — София област.",
+        "desc_hub": "Електродифузно заваряване на РЕ-HD полиетилен. Мони Терм ЕООД — София област. Подходящо при газови и водопроводни монтажи.",
         "lead": "Професионални електродифузни съединения на РЕ-HD тръби за сигурни и дълготрайни инсталации.",
         "image": "moni5.jpg",
         "gallery": ["moni5.jpg", "moni8.jpg", "moni19.jpg"],
@@ -309,9 +323,9 @@ SERVICES = [
 PROJECTS = [
     {
         "slug": "sondazh-pompa-vodochurpene",
-        "title": "Сондаж и монтаж на сондажна помпа",
-        "h1": "Първо водочерпене след монтаж на сондажна помпа",
-        "desc": "Реален проект на Мони Терм: монтаж на сондажна помпа и първо водочерпене на нов сондаж. София област.",
+        "title": "Кейс: сондажна помпа и първо водочерпене",
+        "h1": "Обект — първо водочерпене след монтаж на сондажна помпа",
+        "desc": "Кейс на Мони Терм: монтаж на сондажна помпа и първо водочерпене на нов сондаж. София област.",
         "lead": "След монтажа на сондажната помпа извършваме първото водочерпене — проверка на дебита и работата на системата.",
         "image": "moni20.jpg",
         "service": "vodni-pompi",
@@ -320,9 +334,9 @@ PROJECTS = [
     },
     {
         "slug": "propan-butan-rezervuari-1750-2700",
-        "title": "Подземни резервоари пропан-бутан 1750 и 2700 л",
-        "h1": "Доставка на резервоари за пропан-бутан за подземен монтаж",
-        "desc": "Проект Мони Терм: резервоари за пропан-бутан 1750 л и 2700 л за подземен монтаж.",
+        "title": "Кейс: подземни резервоари 1750 и 2700 л",
+        "h1": "Обект — доставка на резервоари пропан-бутан за подземен монтаж",
+        "desc": "Кейс Мони Терм: резервоари за пропан-бутан 1750 л и 2700 л за подземен монтаж.",
         "lead": "Автономно газоснабдяване с подземни резервоари — доставка и подготовка за монтаж.",
         "image": "moni3.jpg",
         "service": "rezervuari-propan-butan",
@@ -331,9 +345,9 @@ PROJECTS = [
     },
     {
         "slug": "dostavka-rezervuari-2x1750",
-        "title": "Доставка на 2×1750 л резервоари пропан-бутан",
-        "h1": "Доставка и разтоварване на резервоари 1750 литра",
-        "desc": "Мони Терм — доставка и разтоварване на 2 броя резервоари за пропан-бутан по 1750 литра.",
+        "title": "Кейс: доставка 2×1750 л резервоари",
+        "h1": "Обект — доставка и разтоварване на резервоари 1750 литра",
+        "desc": "Кейс Мони Терм — доставка и разтоварване на 2 броя резервоари за пропан-бутан по 1750 литра.",
         "lead": "Логистика и разтоварване на тежко оборудване за автономни газови системи.",
         "image": "moni10.jpg",
         "service": "rezervuari-propan-butan",
@@ -342,9 +356,9 @@ PROJECTS = [
     },
     {
         "slug": "podzemni-rezervuari-sedmichna-dostavka",
-        "title": "Подземни резервоари — седмична доставка",
-        "h1": "3×1750 л и 1×2700 л подземни резервоари",
-        "desc": "Доставка на подземни резервоари за пропан-бутан: 3 броя 1750 л и един 2700 л. Мони Терм ЕООД.",
+        "title": "Кейс: седмична доставка подземни резервоари",
+        "h1": "Обект — 3×1750 л и 1×2700 л подземни резервоари",
+        "desc": "Кейс: доставка на подземни резервоари за пропан-бутан — 3×1750 л и 1×2700 л. Мони Терм ЕООД.",
         "lead": "Редовни доставки на резервоари за обекти с автономно газоснабдяване в София област.",
         "image": "moni10.jpg",
         "service": "rezervuari-propan-butan",
@@ -353,9 +367,9 @@ PROJECTS = [
     },
     {
         "slug": "diamanteno-probivane-stomanobeton",
-        "title": "Диамантено пробиване в стоманобетон",
-        "h1": "Диамантено пробиване в стоманобетон",
-        "desc": "Диамантено пробиване в стоманобетон за монтажни трасета — Мони Терм ЕООД, София област.",
+        "title": "Кейс: диамантено пробиване в стоманобетон",
+        "h1": "Обект — диамантено пробиване в стоманобетон",
+        "desc": "Кейс: диамантено пробиване в стоманобетон за монтажни трасета — Мони Терм ЕООД, София област.",
         "lead": "Прецизни отвори в стоманобетон при изграждане на инсталации.",
         "image": "moni4.jpg",
         "service": "diamanteno-probivane",
@@ -364,9 +378,9 @@ PROJECTS = [
     },
     {
         "slug": "diamanteno-probivane-otvori",
-        "title": "Диамантено пробиване на отвори",
-        "h1": "Пробиване на отвори в бетон, камък и стоманобетон",
-        "desc": "Диамантено пробиване на отвори в бетон, камък и стоманобетон за газови и водопроводни инсталации.",
+        "title": "Кейс: отвори с диамантено пробиване",
+        "h1": "Обект — пробиване на отвори в бетон, камък и стоманобетон",
+        "desc": "Кейс: диамантено пробиване на отвори в бетон, камък и стоманобетон за монтажни трасета.",
         "lead": "Подготвителни работи за чисти и сигурни трасета при монтаж.",
         "image": "moni2.jpg",
         "service": "diamanteno-probivane",
@@ -375,9 +389,9 @@ PROJECTS = [
     },
     {
         "slug": "gazov-kotel-immergas",
-        "title": "Монтаж на газов котел Immergas",
-        "h1": "Монтаж и настройка на газов котел Immergas",
-        "desc": "Професионален монтаж на газов котел Immergas с програматор — реален обект на Мони Терм.",
+        "title": "Кейс: газов котел Immergas",
+        "h1": "Обект — монтаж и настройка на газов котел Immergas",
+        "desc": "Кейс: професионален монтаж на газов котел Immergas с програматор — реален обект на Мони Терм.",
         "lead": "Чист монтаж, правилна връзка към газовата инсталация и настройка на комфорта.",
         "image": "moni1.jpg",
         "service": "gazovi-kotli",
@@ -386,9 +400,9 @@ PROJECTS = [
     },
     {
         "slug": "omekotitel-clack-hidrofor",
-        "title": "Омекотител Clack с водоснабдителна система",
-        "h1": "Омекотителна система Clack",
-        "desc": "Омекотител Clack с филтри и помпена група — Мони Терм ЕООД.",
+        "title": "Кейс: омекотител Clack с водоснабдяване",
+        "h1": "Обект — омекотителна система Clack",
+        "desc": "Кейс: омекотител Clack с филтри и помпена група — Мони Терм ЕООД.",
         "lead": "Мека вода и стабилно налягане в професионално изградена система.",
         "image": "moni18.jpg",
         "service": "omekotyavane-na-voda",
@@ -431,14 +445,19 @@ def header(depth: int, current: str = "") -> str:
   </header>"""
 
 
-def footer(depth: int) -> str:
+def footer(depth: int, service_slug: str | None = None) -> str:
     p = rel_prefix(depth)
     links = "\n".join(
-        f'            <li><a href="{p}{s["slug"]}/">{s["name"]}</a></li>' for s in SERVICES[:6]
+        f'            <li><a href="{p}{s["slug"]}/">{s["name"]}</a></li>' for s in SERVICES
     )
-    cities = " · ".join(
-        f'<a href="{p}gazovi-kotli/{c["slug"]}.html">{c["name"]}</a>' for c in CITIES[:6]
-    )
+    geo_svc = next((s for s in SERVICES if s["slug"] == service_slug and s.get("geo")), None)
+    if geo_svc:
+        cities = " · ".join(
+            f'<a href="{p}{geo_svc["slug"]}/{c["slug"]}.html">{c["name"]}</a>' for c in CITIES
+        )
+        cities_block = f'\n          <p style="margin-top:1rem;font-size:.85rem;color:var(--muted)">Райони: {cities}</p>'
+    else:
+        cities_block = ""
     return f"""  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -461,10 +480,10 @@ def footer(depth: int) -> str:
           <ul>
             <li><a href="tel:{TEL}">{PHONE}</a></li>
             <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
-            <li><a href="{p}kontakt.html">Контактна страница</a></li>
+            <li><a href="{p}oferta.html">Безплатна оферта</a></li>
+            <li><a href="{p}kontakt.html">Контакт</a></li>
             <li><a href="{FB}" rel="noopener noreferrer" target="_blank">Facebook</a></li>
-          </ul>
-          <p style="margin-top:1rem;font-size:.85rem;color:var(--muted)">Райони: {cities}</p>
+          </ul>{cities_block}
         </div>
       </div>
       <div class="footer-note">
@@ -474,6 +493,58 @@ def footer(depth: int) -> str:
     </div>
   </footer>
   <script src="{p}js/main.js" defer></script>"""
+
+
+def geo_meta_tail(s: dict) -> str:
+    if s["slug"] == "uzakonyavane-gazovi-instalacii":
+        return f"Документация и узаконяване. Тел. {PHONE}."
+    tails = {
+        "gazovi-kotli": f"Доставка, монтаж и настройка. Тел. {PHONE}.",
+        "rezervuari-propan-butan": f"Доставка и монтаж на резервоар. Тел. {PHONE}.",
+        "gazovi-trasea": f"Тръбен път, връзки и изпитания. Тел. {PHONE}.",
+        "vodni-pompi": f"Подбор, монтаж и пускане. Тел. {PHONE}.",
+        "vodoprovodni-trasea": f"Изграждане на водопроводна мрежа. Тел. {PHONE}.",
+        "klimatici": f"Доставка, монтаж и пускане. Тел. {PHONE}.",
+        "omekotyavane-na-voda": f"Монтаж и настройка на омекотител. Тел. {PHONE}.",
+        "vik-uslugi": f"ВИК връзки, ремонти и локален монтаж. Тел. {PHONE}.",
+    }
+    return tails.get(s["slug"], f"Оглед, оферта и професионален монтаж. Тел. {PHONE}.")
+
+
+def geo_include_bullets(s: dict, c: dict) -> list[str]:
+    if s["slug"] == "uzakonyavane-gazovi-instalacii":
+        return [
+            f"Преглед на обекта и документацията {c['locative']}",
+            "Подготовка на нужните документи",
+            "Съдействие за узаконяване на сградна газова инсталация",
+            "Координация с монтажа при нужда",
+        ]
+    bullets = [
+        f"Оглед на обекта {c['locative']}",
+        "Индивидуално техническо решение",
+        "Доставка, монтаж и пускане",
+    ]
+    if s["slug"] in ("gazovi-trasea", "gazovi-kotli", "rezervuari-propan-butan"):
+        bullets.append("Координация с останалите газови работи на обекта")
+    elif s["slug"] == "vodoprovodni-trasea":
+        bullets.append("Изпитания на новото водопроводно трасе")
+    elif s["slug"] == "vik-uslugi":
+        bullets.append("Локални ВИК връзки и ремонти (не магистрални трасета)")
+    else:
+        bullets.append("Инструктаж след пускане")
+    return bullets
+
+
+def hub_process_blurb(s: dict) -> str:
+    if s["slug"] == "uzakonyavane-gazovi-instalacii":
+        return (
+            "Базирани сме в <strong>Костинброд</strong> и обслужваме <strong>София</strong> и "
+            "<strong>София област</strong>. Помагаме с документацията и узаконяването на сградни газови инсталации."
+        )
+    return (
+        "Базирани сме в <strong>Костинброд</strong> и обслужваме <strong>София</strong> и "
+        "<strong>София област</strong>. Поемаме процеса — от оглед и оферта до монтаж и настройка."
+    )
 
 
 def head_assets(depth: int) -> str:
@@ -601,12 +672,12 @@ def service_hub(s: dict) -> str:
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <a href="{p}index.html">Начало</a><span aria-hidden="true">/</span><span>{s["name"]}</span>
         </nav>
-        <p class="eyebrow">София · София област</p>
+        <p class="eyebrow">София област · Костинброд</p>
         <h1>{s["h1_hub"]}</h1>
         <p class="lead">{s["lead"]}</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="tel:{TEL}">Оферта {PHONE}</a>
-          <a class="btn btn-secondary" href="{p}kontakt.html">Запитване</a>
+          <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
+          <a class="btn btn-secondary" href="{p}oferta.html">Безплатна оферта</a>
         </div>
       </div>
     </header>
@@ -616,7 +687,7 @@ def service_hub(s: dict) -> str:
         <article class="prose">
           <figure><img src="{p}images/{s["image"]}" alt="{s["name"]} — професионален монтаж от Мони Терм" width="1000" height="700" loading="eager"></figure>
           <h2>Защо Мони Терм за „{s["keyword"]}“</h2>
-          <p>Базирани сме в <strong>Костинброд</strong> и обслужваме <strong>София</strong> и <strong>София област</strong>. Поемаме целия процес — от оглед и проект до монтаж, узаконяване и настройка.</p>
+          <p>{hub_process_blurb(s)}</p>
           <ul>
 {bullets}
           </ul>
@@ -634,7 +705,8 @@ def service_hub(s: dict) -> str:
           <p>{ADDRESS}</p>
           <p class="phone"><a href="tel:{TEL}">{PHONE}</a></p>
           <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
-          <a class="btn btn-primary" href="tel:{TEL}" style="width:100%">Обадете се</a>
+          <a class="btn btn-primary" href="{p}oferta.html" style="width:100%;margin-bottom:.6rem">Безплатна оферта</a>
+          <a class="btn btn-secondary" href="tel:{TEL}" style="width:100%">Обадете се</a>
           <div class="share-box">
             <label for="share-{s["slug"]}">Споделете</label>
             <input id="share-{s["slug"]}" type="text" readonly data-share-url value="{url}">
@@ -645,16 +717,17 @@ def service_hub(s: dict) -> str:
 {geo_links}
     <section class="cta-band">
       <div class="container">
-        <h2>Нуждаете се от {s["name"].lower()} {CITIES[0]["locative"]} или в областта?</h2>
+        <h2>Нуждаете се от {s["name"].lower()} в региона?</h2>
         <p>Мони Терм ЕООД — професионално изпълнение и индивидуален подход.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
+          <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
           <a class="btn btn-cool" href="{p}proekti/">Вижте проекти</a>
         </div>
       </div>
     </section>
   </main>
-{footer(depth)}
+{footer(depth, s["slug"])}
 </body>
 </html>
 """
@@ -664,19 +737,66 @@ def service_geo(s: dict, c: dict) -> str:
     depth = 1
     p = rel_prefix(depth)
     url = f"{DOMAIN}/{s['slug']}/{c['slug']}.html"
-    title = f"{s['keyword'].capitalize()} {c['name']} | Мони Терм ЕООД"
-    h1 = f"{s['name']} {c['locative']}"
-    desc = f"{s['keyword'].capitalize()} {c['locative']} и региона. Мони Терм ЕООД — Костинброд. Проект, монтаж, узаконяване. Тел. {PHONE}."
+    note = CITY_NOTES.get(c["slug"], "")
+    if c["slug"] == "sofia":
+        title = f"{s['keyword'].capitalize()} в София (столицата) | Мони Терм"
+        h1 = f"{s['name']} в София — столицата"
+        lead = (
+            f"Търсите <strong>{s['keyword']} в София</strong>? Мони Терм ЕООД работи в столицата "
+            f"с база в Костинброд — удобно за квартали и крайните зони."
+        )
+    else:
+        title = f"{s['keyword'].capitalize()} {c['name']} | Мони Терм ЕООД"
+        h1 = f"{s['name']} {c['locative']}"
+        lead = (
+            f"Търсите <strong>{s['keyword']} {c['locative']}</strong>? Мони Терм ЕООД предлага "
+            f"професионално изпълнение с база в Костинброд — удобно за {c['name']} и съседните населени места."
+        )
+    desc = f"{s['keyword'].capitalize()} {c['locative']} и региона. Мони Терм ЕООД — Костинброд. {geo_meta_tail(s)}"
+    include = "\n".join(f"            <li>{b}</li>" for b in geo_include_bullets(s, c))
     other = "\n".join(
         f'            <li><a href="{x["slug"]}.html">{s["name"]} {x["name"]}</a></li>'
         for x in CITIES
         if x["slug"] != c["slug"]
     )
+    if s["slug"] == "vik-uslugi":
+        scope = (
+            f"За обекти {c['locative']} поемаме локални ВИК връзки, ремонти и монтаж на арматура. "
+            f"Нови магистрални водопроводи са отделна услуга — "
+            f'<a href="{p}vodoprovodni-trasea/{c["slug"]}.html">водопроводни трасета {c["locative"]}</a>.'
+        )
+    elif s["slug"] == "vodoprovodni-trasea":
+        scope = (
+            f"За обекти {c['locative']} изграждаме водопроводни трасета и тръбни мрежи от източника до сградата. "
+            f"Локални ремонти и връзки вижте при "
+            f'<a href="{p}vik-uslugi/{c["slug"]}.html">ВИК услуги {c["locative"]}</a>.'
+        )
+    elif s["slug"] == "uzakonyavane-gazovi-instalacii":
+        scope = (
+            f"За обекти {c['locative']} съдействаме с документацията и узаконяването на сградна газова инсталация. "
+            "Работим прозрачно: ясен обхват и координация с монтажа при нужда."
+        )
+    else:
+        scope = (
+            f"За обекти {c['locative']} осигуряваме оглед, оферта и изпълнение на {s['name'].lower()}. "
+            "Работим прозрачно: ясен обхват, качествено оборудване и настройка до готовност за ползване."
+        )
     faqs = [
-        (f"Правите ли {s['keyword']} {c['locative']}?", f"Да. Мони Терм обслужва {c['name']} и {c['region']}. Обадете се на {PHONE}."),
-        (f"Откъде идва екипът?", "Базата ни е в Костинброд — удобно за София и цяла София област."),
+        (
+            f"Правите ли {s['keyword']} {c['locative']}?",
+            f"Да. Мони Терм обслужва {c['name']} и {c['region']}. Обадете се на {PHONE}.",
+        ),
+        (
+            "Откъде идва екипът?",
+            f"Базата ни е в Костинброд — удобно за {c['name']} и София област.",
+        ),
         ("Как се образува цената?", "Индивидуална оферта след оглед на обекта."),
     ]
+    if note:
+        faqs.insert(
+            1,
+            (f"Има ли особености {c['locative']}?", note),
+        )
     faqs_html = "\n".join(f"""          <details><summary>{q}</summary><p>{a}</p></details>""" for q, a in faqs)
     faqs_json = ",\n".join(
         json.dumps(
@@ -685,6 +805,7 @@ def service_geo(s: dict, c: dict) -> str:
         )
         for q, a in faqs
     )
+    note_html = f"<p>{note}</p>" if note else ""
 
     return f"""<!DOCTYPE html>
 <html lang="bg">
@@ -742,10 +863,10 @@ def service_geo(s: dict, c: dict) -> str:
         </nav>
         <p class="eyebrow">{c["region"]}</p>
         <h1>{h1}</h1>
-        <p class="lead">Търсите <strong>{s["keyword"]} {c["locative"]}</strong>? Мони Терм ЕООД предлага професионално изпълнение с база в Костинброд — удобно за {c["name"]} и съседните населени места.</p>
+        <p class="lead">{lead}</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
-          <a class="btn btn-secondary" href="{p}kontakt.html">Запитване</a>
+          <a class="btn btn-secondary" href="{p}oferta.html">Безплатна оферта</a>
         </div>
       </div>
     </header>
@@ -755,22 +876,21 @@ def service_geo(s: dict, c: dict) -> str:
         <article class="prose">
           <figure><img src="{p}images/{s["image"]}" alt="{s["name"]} {c["locative"]} — Мони Терм" width="1000" height="700" loading="lazy"></figure>
           <h2>{s["keyword"].capitalize()} {c["locative"]} — какво включваме</h2>
-          <p>За обекти {c["locative"]} осигуряваме оглед, оферта и изпълнение на {s["name"].lower()}. Работим прозрачно: ясен обхват, качествено оборудване и настройка до готовност за ползване.</p>
+          <p>{scope}</p>
+          {note_html}
           <ul>
-            <li>Оглед на обекта {c["locative"]}</li>
-            <li>Индивидуално техническо решение</li>
-            <li>Доставка, монтаж и пускане</li>
-            <li>Узаконяване при нужда</li>
+{include}
           </ul>
           <h2>Защо локална фирма от Костинброд</h2>
-          <p>Костинброд е стратегическа точка за София и София област — бърз достъп до {c["name"]}, Сливница, Драгоман, Годеч и околните села.</p>
+          <p>Костинброд е стратегическа точка за София и София област — бърз достъп до {c["name"]} и съседните населени места.</p>
           <h2>Често задавани въпроси</h2>
           <div class="faq">{faqs_html}</div>
         </article>
         <aside class="side-panel">
           <h2>{c["name"]}</h2>
           <p class="phone"><a href="tel:{TEL}">{PHONE}</a></p>
-          <a class="btn btn-primary" href="tel:{TEL}" style="width:100%">Обадете се</a>
+          <a class="btn btn-primary" href="{p}oferta.html" style="width:100%;margin-bottom:.6rem">Безплатна оферта</a>
+          <a class="btn btn-secondary" href="tel:{TEL}" style="width:100%">Обадете се</a>
           <p style="margin-top:1.2rem;font-size:.85rem;color:var(--muted)">Също предлагаме:</p>
           <ul class="checklist">
 {other}
@@ -782,13 +902,16 @@ def service_geo(s: dict, c: dict) -> str:
 
     <section class="cta-band">
       <div class="container">
-        <h2>Оферта за {s["name"].lower()} {c["locative"]}</h2>
-        <p>Обадете се на Мони Терм ЕООД.</p>
-        <div class="cta-row"><a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a></div>
+        <h2>{s["name"]} {c["locative"]} — следваща стъпка</h2>
+        <p>Обадете се на Мони Терм ЕООД или поискайте безплатна оферта онлайн.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
+          <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
+        </div>
       </div>
     </section>
   </main>
-{footer(depth)}
+{footer(depth, s["slug"])}
 </body>
 </html>
 """
@@ -811,10 +934,10 @@ def projects_hub() -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Проекти | Газ, вода и монтаж | Мони Терм</title>
-  <meta name="description" content="Реални проекти на Мони Терм ЕООД: пропан-бутан резервоари, газови котли, омекотители, водни помпи, диамантено пробиване. София и София област.">
+  <title>Реални обекти (кейсове) | Мони Терм</title>
+  <meta name="description" content="Кейсове от обекти на Мони Терм ЕООД: резервоари пропан-бутан, газови котли, водни помпи, диамантено пробиване. София област.">
   <link rel="canonical" href="{url}">
-  <meta property="og:title" content="Проекти | Мони Терм ЕООД">
+  <meta property="og:title" content="Реални обекти | Мони Терм ЕООД">
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="{DOMAIN}/images/logo.jpg">
   <meta name="twitter:image" content="{DOMAIN}/images/logo.jpg">
@@ -823,7 +946,7 @@ def projects_hub() -> str:
   {{
     "@context":"https://schema.org",
     "@type":"CollectionPage",
-    "name":"Проекти — Мони Терм ЕООД",
+    "name":"Реални обекти — Мони Терм ЕООД",
     "url":"{url}",
     "isPartOf":{{"@type":"WebSite","url":"{DOMAIN}/"}}
   }}
@@ -835,9 +958,9 @@ def projects_hub() -> str:
     <header class="page-hero">
       <div class="container">
         <nav class="breadcrumbs"><a href="{p}index.html">Начало</a><span aria-hidden="true">/</span><span>Проекти</span></nav>
-        <p class="eyebrow">Портфолио</p>
-        <h1>Реални проекти от терена</h1>
-        <p class="lead">Газови котли, резервоари, помпи, омекотители и монтажни работи в София и София област.</p>
+        <p class="eyebrow">Кейсове</p>
+        <h1>Реални обекти от терена</h1>
+        <p class="lead">Кратки кейсове: газови котли, резервоари, помпи и монтажни работи в София област.</p>
       </div>
     </header>
     <section class="section">
@@ -849,8 +972,11 @@ def projects_hub() -> str:
     </section>
     <section class="cta-band">
       <div class="container">
-        <h2>Искате подобен проект?</h2>
-        <div class="cta-row"><a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a></div>
+        <h2>Искате подобен обект?</h2>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
+          <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
+        </div>
       </div>
     </section>
   </main>
@@ -917,7 +1043,7 @@ def project_page(pr: dict) -> str:
           <img src="{p}images/{pr["image"]}" alt="{pr["title"]}" width="1100" height="750" loading="lazy">
         </div>
         <div class="prose">
-          <h2>За проекта</h2>
+          <h2>За обекта</h2>
           <p>{pr["desc"]}</p>
           <p>Изпълнител: <strong>Мони Терм ЕООД</strong>, Костинброд. Работим в София и София област.</p>
           <ul class="checklist">
@@ -931,8 +1057,11 @@ def project_page(pr: dict) -> str:
     </section>
     <section class="cta-band">
       <div class="container">
-        <h2>Искате оферта за подобен обект?</h2>
-        <div class="cta-row"><a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a></div>
+        <h2>Искате подобен обект?</h2>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
+          <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
+        </div>
       </div>
     </section>
   </main>
@@ -1001,9 +1130,26 @@ def main() -> None:
         # Convenience redirect: /slug.html → /slug/
         write(ROOT / f"{s['slug']}.html", redirect_page(f"/{s['slug']}/"))
         if s["geo"]:
+            keep_cities = {c["slug"] for c in CITIES}
             for c in CITIES:
                 write(ROOT / s["slug"] / f"{c['slug']}.html", service_geo(s, c))
                 sitemap_urls.append((f"/{s['slug']}/{c['slug']}.html", "monthly", "0.8"))
+            svc_dir = ROOT / s["slug"]
+            if svc_dir.exists():
+                for f in svc_dir.glob("*.html"):
+                    if f.name == "index.html":
+                        continue
+                    if f.stem not in keep_cities:
+                        f.unlink()
+                        print("Removed", f.relative_to(ROOT))
+        else:
+            svc_dir = ROOT / s["slug"]
+            if svc_dir.exists():
+                for f in svc_dir.glob("*.html"):
+                    if f.name == "index.html":
+                        continue
+                    f.unlink()
+                    print("Removed", f.relative_to(ROOT))
 
     # Remove obsolete service folders/files that are not in SERVICES
     for path in ROOT.iterdir():
@@ -1029,6 +1175,10 @@ def main() -> None:
         if flat.exists():
             flat.unlink()
             print("Removed", flat.name)
+        legacy_dir = ROOT / slug
+        if legacy_dir.is_dir():
+            shutil.rmtree(legacy_dir)
+            print("Removed dir", slug)
 
     # Projects
     write(ROOT / "proekti" / "index.html", projects_hub())
