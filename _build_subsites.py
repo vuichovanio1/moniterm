@@ -16,6 +16,11 @@ PHONE = "0886 391 729"
 EMAIL = "moni.term@abv.bg"
 ADDRESS = "ул. Славянска, 2230 Костинброд"
 FB = "https://www.facebook.com/profile.php?id=100063597367628"
+# Official Google Business Profile (same entity as Facebook)
+MAPS = "https://www.google.com/maps?cid=4408469897849908317"
+MAPS_EMBED = "https://www.google.com/maps?q=42.8081319,23.2032583&z=17&hl=bg&output=embed"
+GEO_LAT = "42.8081319"
+GEO_LNG = "23.2032583"
 TODAY = date.today().isoformat()
 
 # Coverage shown as on-page area grid (not separate URLs)
@@ -507,6 +512,7 @@ def footer(depth: int) -> str:
             <li><a href="{p}oferta.html">Безплатна оферта</a></li>
             <li><a href="{p}kontakt.html">Контакт</a></li>
             <li><a href="{FB}" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+            <li><a href="{MAPS}" rel="noopener noreferrer" target="_blank">Google Maps</a></li>
           </ul>
         </div>
       </div>
@@ -667,6 +673,14 @@ def service_hub(s: dict) -> str:
           "name": "Мони Терм ЕООД",
           "telephone": "{TEL}",
           "email": "{EMAIL}",
+          "url": "{DOMAIN}/",
+          "sameAs": ["{FB}", "{MAPS}"],
+          "hasMap": "{MAPS}",
+          "geo": {{
+            "@type": "GeoCoordinates",
+            "latitude": "{GEO_LAT}",
+            "longitude": "{GEO_LNG}"
+          }},
           "address": {{
             "@type": "PostalAddress",
             "streetAddress": "ул. Славянска",

@@ -1,0 +1,14 @@
+---
+description: When user asks to upload/push, push main to both GitHub remotes
+alwaysApply: true
+---
+
+# Dual remote push
+
+When the user asks to upload, publish, push, or "качи" the site/repo:
+
+1. Push `main` to **both** remotes (same commit):
+   - `origin` → `https://github.com/vuichovanio1/moniterm.git`
+   - `moniterm` → `https://github.com/moniterm/moniterm.git`
+2. Do not push only one remote unless the user explicitly names a single target.
+3. After push, confirm both remotes succeeded (or report which failed).

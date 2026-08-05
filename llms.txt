@@ -11,6 +11,9 @@ Last Updated: 2026-08-05
 - HQ: ул. Славянска, 2230 Костинброд
 - Phone: 0886 391 729
 - Email: moni.term@abv.bg
+- Facebook: https://www.facebook.com/profile.php?id=100063597367628
+- Google Maps: https://www.google.com/maps?cid=4408469897849908317
+- Geo: 42.8081319, 23.2032583
 - Area: София, София област (Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя, Нови Искър) — описани като решетка на service страниците, без отделни geo URL
 - Architecture: brand hub `/` + 11 service hubs `/{service}/` + case studies `/proekti/` + ads landing `/oferta.html`
 - Full: https://vuichovanio1.github.io/moniterm/llms-full.txt · FAQ: https://vuichovanio1.github.io/moniterm/llms-faq.txt

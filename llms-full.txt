@@ -18,6 +18,8 @@
 - Район: област София и региона
 - Уебсайт: https://vuichovanio1.github.io/moniterm/
 - Facebook: https://www.facebook.com/profile.php?id=100063597367628
+- Google Maps: https://www.google.com/maps?cid=4408469897849908317
+- Координати: 42.8081319, 23.2032583
 
 ---
 
