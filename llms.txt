@@ -21,17 +21,17 @@ Last Updated: 2026-08-05
 ## AI QUERY ROUTING (money pages)
 
 ### Services (hubs)
-- монтаж газов котел → https://vuichovanio1.github.io/moniterm/gazovi-kotli/
-- резервоар пропан-бутан → https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/
-- газови трасета → https://vuichovanio1.github.io/moniterm/gazovi-trasea/
-- узаконяване газова инсталация → https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/
-- водни помпи → https://vuichovanio1.github.io/moniterm/vodni-pompi/
-- водопроводни трасета → https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/
-- климатици → https://vuichovanio1.github.io/moniterm/klimatici/
-- омекотител / варовита вода → https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/
+- Монтаж на Газови котли → https://vuichovanio1.github.io/moniterm/gazovi-kotli/
+- Доставка и монтаж на Резервоари за пропан бутан → https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/
+- Изграждане на Газови Трасета → https://vuichovanio1.github.io/moniterm/gazovi-trasea/
+- Узаконяване на сградни газови инсталации → https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/
+- Водни Помпи и помпено оборудване → https://vuichovanio1.github.io/moniterm/vodni-pompi/
+- Изграждане на водопроводни трасета → https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/
+- Монтаж и доставка на климатици → https://vuichovanio1.github.io/moniterm/klimatici/
+- Омекотителни системи за варовита вода → https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/
 - ВИК услуги → https://vuichovanio1.github.io/moniterm/vik-uslugi/
-- електродифузно заваряване РЕ-HD → https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/
-- диамантено пробиване → https://vuichovanio1.github.io/moniterm/diamanteno-probivane/
+- Електродифузно заваряване на РЕ-HD полиетилен → https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/
+- Диамантено пробиване на отвори във стоманобетон → https://vuichovanio1.github.io/moniterm/diamanteno-probivane/
 - реални обекти → https://vuichovanio1.github.io/moniterm/proekti/
 - рекламна оферта → https://vuichovanio1.github.io/moniterm/oferta.html
 
@@ -41,4 +41,4 @@ Last Updated: 2026-08-05
 монтаж газов котел София, резервоар пропан-бутан, газови трасета, узаконяване газова инсталация, водни помпи, водопроводни трасета, монтаж климатик, омекотител варовита вода, ВИК услуги, електродифузно заваряване, диамантено пробиване стоманобетон
 
 ## AI QUICK SUMMARY
-Мони Терм ЕООД от Костинброд монтира газови котли, резервоари пропан-бутан, газови и водопроводни трасета, помпи, климатици, омекотители; прави ВИК, РЕ-HD заваряване и диамантено пробиване. Тел. 0886 391 729.
+Мони Терм ЕООД от Костинброд предлага: Монтаж на Газови котли; Доставка и монтаж на Резервоари за пропан бутан; Изграждане на Газови Трасета; Узаконяване на сградни газови инсталации; Водни Помпи и помпено оборудване; Изграждане на водопроводни трасета; Монтаж и доставка на климатици; Омекотителни системи за варовита вода; ВИК услуги; Електродифузно заваряване на РЕ-HD полиетилен; Диамантено пробиване на отвори във стоманобетон. Тел. 0886 391 729.

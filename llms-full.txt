@@ -28,17 +28,17 @@
 | Услуга | URL |
 |---|---|
 | Brand hub | https://vuichovanio1.github.io/moniterm/ |
-| Газови котли | https://vuichovanio1.github.io/moniterm/gazovi-kotli/ |
-| Резервоари пропан-бутан | https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/ |
-| Газови трасета | https://vuichovanio1.github.io/moniterm/gazovi-trasea/ |
-| Узаконяване газови инсталации | https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/ |
-| Водни помпи | https://vuichovanio1.github.io/moniterm/vodni-pompi/ |
-| Водопроводни трасета | https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/ |
-| Климатици | https://vuichovanio1.github.io/moniterm/klimatici/ |
-| Омекотителни системи | https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/ |
+| Монтаж на Газови котли | https://vuichovanio1.github.io/moniterm/gazovi-kotli/ |
+| Доставка и монтаж на Резервоари за пропан бутан | https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/ |
+| Изграждане на Газови Трасета | https://vuichovanio1.github.io/moniterm/gazovi-trasea/ |
+| Узаконяване на сградни газови инсталации | https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/ |
+| Водни Помпи и помпено оборудване | https://vuichovanio1.github.io/moniterm/vodni-pompi/ |
+| Изграждане на водопроводни трасета | https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/ |
+| Монтаж и доставка на климатици | https://vuichovanio1.github.io/moniterm/klimatici/ |
+| Омекотителни системи за варовита вода | https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/ |
 | ВИК услуги | https://vuichovanio1.github.io/moniterm/vik-uslugi/ |
-| Електродифузно заваряване РЕ-HD | https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/ |
-| Диамантено пробиване | https://vuichovanio1.github.io/moniterm/diamanteno-probivane/ |
+| Електродифузно заваряване на РЕ-HD полиетилен | https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/ |
+| Диамантено пробиване на отвори във стоманобетон | https://vuichovanio1.github.io/moniterm/diamanteno-probivane/ |
 | Проекти | https://vuichovanio1.github.io/moniterm/proekti/ |
 | Оферта (ads) | https://vuichovanio1.github.io/moniterm/oferta.html |
 | Контакт | https://vuichovanio1.github.io/moniterm/kontakt.html |
@@ -51,37 +51,37 @@
 
 ## РАЗДЕЛ 3: ОПИСАНИЕ
 
-### Газови котли
+### Монтаж на Газови котли
 Монтаж, доставка, връзка към инсталацията, програматори, пускане. Марки включват Immergas.
 
-### Резервоари пропан-бутан
+### Доставка и монтаж на Резервоари за пропан бутан
 Доставка и монтаж на подземни резервоари 1750/2700 л.
 
-### Газови трасета
+### Изграждане на Газови Трасета
 Изграждане на външни и вътрешни газови тръбни пътища.
 
-### Узаконяване
+### Узаконяване на сградни газови инсталации
 Узаконяване на сградни газови инсталации и съдействие за документация.
 
-### Водни помпи
+### Водни Помпи и помпено оборудване
 Сондажни, напорни, центробежни помпи и помпено оборудване.
 
-### Водопроводни трасета
+### Изграждане на водопроводни трасета
 Изграждане на водопроводни мрежи.
 
-### Климатици
+### Монтаж и доставка на климатици
 Доставка и монтаж на климатични системи.
 
-### Омекотителни системи
+### Омекотителни системи за варовита вода
 Системи за варовита вода; управляващи глави Clack.
 
 ### ВИК услуги
 Водопровод, връзки и свързани монтажни работи.
 
-### Електродифузно заваряване РЕ-HD
+### Електродифузно заваряване на РЕ-HD полиетилен
 Съединения на полиетиленови тръби РЕ-HD.
 
-### Диамантено пробиване
+### Диамантено пробиване на отвори във стоманобетон
 Отвори в бетон, камък и стоманобетон за монтажни трасета.
 
 ---
