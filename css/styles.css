@@ -461,14 +461,16 @@ p {
   font-size: clamp(1.35rem, 3.2vw, 2rem);
   font-weight: 500;
   color: #e8edf3;
-  max-width: 28ch;
+  max-width: 36ch;
+  line-height: 1.25;
   animation: brandIn 0.9s 0.12s ease both;
 }
 
 .hero .lead {
   color: var(--muted);
-  font-size: 1.08rem;
-  max-width: 48ch;
+  font-size: 1.05rem;
+  max-width: 42ch;
+  line-height: 1.55;
   animation: brandIn 0.9s 0.22s ease both;
 }
 
@@ -477,10 +479,10 @@ p {
   align-items: center;
   gap: 0.5rem;
   color: var(--cool-soft);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-transform: none;
   margin-bottom: 1rem;
 }
 
