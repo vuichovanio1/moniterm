@@ -7,6 +7,8 @@ import shutil
 from datetime import date
 from pathlib import Path
 
+from _hub_content import HUB_CONTENT
+
 ROOT = Path(r"C:\repos\moniterm")
 DOMAIN = "https://vuichovanio1.github.io/moniterm"
 TEL = "+359886391729"
@@ -444,6 +446,9 @@ def header(depth: int, current: str = "") -> str:
     def cur(key: str) -> str:
         return ' aria-current="page"' if current == key else ""
 
+    svc_links = "\n".join(
+        f'          <a href="{p}{s["slug"]}/"{cur(s["nav"])}>{s["name"]}</a>' for s in SERVICES
+    )
     return f"""  <a class="skip-link" href="#main">Към съдържанието</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -455,12 +460,15 @@ def header(depth: int, current: str = "") -> str:
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="site-nav" aria-label="Основна навигация">
-        <a href="{p}gazovi-kotli/"{cur("kotli")}>Газови котли</a>
-        <a href="{p}rezervuari-propan-butan/"{cur("rezervuari")}>Резервоари</a>
-        <a href="{p}vodni-pompi/"{cur("pompi")}>Помпи</a>
-        <a href="{p}omekotyavane-na-voda/"{cur("soft")}>Омекотяване</a>
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-controls="nav-services">Услуги</button>
+          <div class="nav-dd-panel" id="nav-services">
+{svc_links}
+          </div>
+        </div>
         <a href="{p}proekti/"{cur("proekti")}>Обекти</a>
         <a href="{p}oferta.html">Оферта</a>
+        <a href="{p}kontakt.html">Контакт</a>
         <a class="nav-cta" href="tel:{TEL}">{PHONE}</a>
       </nav>
     </div>
@@ -528,18 +536,19 @@ def write(path: Path, content: str) -> None:
     print("Wrote", path.relative_to(ROOT))
 
 
-def areas_section(service_name: str) -> str:
+def areas_section(s: dict) -> str:
+    extra = HUB_CONTENT[s["slug"]]
     cards = "\n".join(
-        f'          <article class="area-card"><h3>{c["name"]}</h3><p>{c["blurb"]}</p></article>'
+        f'          <article class="area-card"><h3>{c["name"]}</h3><p>{extra["areas"][c["slug"]]}</p></article>'
         for c in CITIES
     )
     return f"""
     <section class="section section-alt" id="rayoni">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Райони</p>
-          <h2>{service_name} в София и София област</h2>
-          <p>База Костинброд — обслужваме тези населени места. Оглед и оферта по телефона.</p>
+          <p class="eyebrow">Райони · {s["keyword"]}</p>
+          <h2>{s["name"]} в София и София област</h2>
+          <p>{extra["local"]}</p>
         </div>
         <div class="areas-grid">
 {cards}
@@ -564,6 +573,7 @@ def service_hub(s: dict) -> str:
     depth = 1
     p = rel_prefix(depth)
     url = f"{DOMAIN}/{s['slug']}/"
+    extra = HUB_CONTENT[s["slug"]]
     related = [pr for pr in PROJECTS if pr["service"] == s["slug"]]
     related_html = ""
     if related:
@@ -577,19 +587,35 @@ def service_hub(s: dict) -> str:
 {items}
           </ul>"""
 
+    more_html = "\n".join(f"          <p>{para}</p>" for para in extra["more"])
     process_html = "\n".join(
         f'          <article class="process-item"><h3>{t}</h3><p>{d}</p></article>'
         for t, d in s["process"]
     )
+    # Merge base FAQs + price + long-tail city FAQs
+    faqs = list(s["faqs"])
+    faqs.insert(0, ("Какъв е ценовият ориентир?", extra["price_note"]))
+    faqs.append(
+        (
+            f"Правите ли {s['keyword']} в София и София област?",
+            f"Да — база Костинброд. Обслужваме София, Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя и Нови Искър. Обадете се на {PHONE}.",
+        )
+    )
+    faqs.append(
+        (
+            f"Има ли разлика за {s['keyword']} в Костинброд и в София?",
+            "Обхватът на услугата е същият; в Костинброд реакцията е най-бърза, защото е нашата база. В София планираме достъпа и логистиката предварително.",
+        )
+    )
     faqs_html = "\n".join(
-        f"""          <details><summary>{q}</summary><p>{a}</p></details>""" for q, a in s["faqs"]
+        f"""          <details><summary>{q}</summary><p>{a}</p></details>""" for q, a in faqs
     )
     faqs_json = ",\n".join(
         json.dumps(
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}},
             ensure_ascii=False,
         )
-        for q, a in s["faqs"]
+        for q, a in faqs
     )
     bullets = "\n".join(f"            <li>{b}</li>" for b in s["bullets"])
     gallery = s.get("gallery") or [s["image"]]
@@ -597,7 +623,8 @@ def service_hub(s: dict) -> str:
         f'          <figure><img src="{p}images/{img}" alt="{s["name"]} — Мони Терм" width="800" height="600" loading="lazy"></figure>'
         for img in gallery
     )
-    related_services = [x for x in SERVICES if x["slug"] != s["slug"]][:4]
+    # Prefer thematically related services in sidebar
+    related_services = [x for x in SERVICES if x["slug"] != s["slug"]]
     related_svc_html = "\n".join(
         f'            <li><a href="{p}{x["slug"]}/">{x["name"]}</a></li>' for x in related_services
     )
@@ -608,7 +635,7 @@ def service_hub(s: dict) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{s["title_hub"]}</title>
-  <meta name="description" content="{s["desc_hub"]}">
+  <meta name="description" content="{s["desc_hub"]} {extra["price_short"]}.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="{url}">
   <meta property="og:type" content="website">
@@ -670,7 +697,7 @@ def service_hub(s: dict) -> str:
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <a href="{p}index.html">Начало</a><span aria-hidden="true">/</span><span>{s["name"]}</span>
         </nav>
-        <p class="eyebrow">София област · Костинброд</p>
+        <p class="eyebrow">София област · Костинброд · {extra["price_short"]}</p>
         <h1>{s["h1_hub"]}</h1>
         <p class="lead">{s["lead"]}</p>
         <div class="cta-row">
@@ -687,13 +714,19 @@ def service_hub(s: dict) -> str:
           <h2>Какво включва „{s["keyword"]}“</h2>
           <p>{hub_process_blurb(s)}</p>
           <p>{s["detail"]}</p>
+{more_html}
           <ul>
 {bullets}
           </ul>
+          <h2>Ценови ориентир</h2>
+          <p>{extra["price_note"]}</p>
+          <p><strong>Какво не е включено / уточняваме честно:</strong> {extra["not_included"]}</p>
           <h2>Как работим</h2>
           <div class="process" style="margin:1.2rem 0 1.5rem">
 {process_html}
           </div>
+          <h2>Къде работим — {s["keyword"]} по населени места</h2>
+          <p>{extra["local"]}</p>
           <h2>От терена</h2>
           <div class="gallery">
 {gallery_html}
@@ -704,12 +737,13 @@ def service_hub(s: dict) -> str:
         </article>
         <aside class="side-panel">
           <h2>Оглед и оферта</h2>
+          <p class="price-chip">{extra["price_short"]}</p>
           <p>{ADDRESS}</p>
           <p class="phone"><a href="tel:{TEL}">{PHONE}</a></p>
           <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
           <a class="btn btn-primary" href="{p}oferta.html" style="width:100%;margin-bottom:.6rem">Безплатна оферта</a>
           <a class="btn btn-secondary" href="tel:{TEL}" style="width:100%">Обадете се</a>
-          <p style="margin-top:1.2rem;font-size:.85rem;color:var(--muted)">Свързани услуги</p>
+          <p style="margin-top:1.2rem;font-size:.85rem;color:var(--muted)">Всички услуги</p>
           <ul class="checklist">
 {related_svc_html}
           </ul>
@@ -720,11 +754,11 @@ def service_hub(s: dict) -> str:
         </aside>
       </div>
     </section>
-{areas_section(s["name"])}
+{areas_section(s)}
     <section class="cta-band">
       <div class="container">
         <h2>Нуждаете се от {s["name"].lower()}?</h2>
-        <p>Обадете се или поискайте безплатна оферта — Мони Терм ЕООД, Костинброд.</p>
+        <p>{extra["price_short"]}. Обадете се или поискайте безплатна оферта — Мони Терм ЕООД, Костинброд.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
           <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
@@ -914,7 +948,7 @@ def main() -> None:
     for path in list(ROOT.iterdir()):
         if not path.is_dir():
             continue
-        if path.name in {"css", "js", "images", "proekti"} or path.name.startswith("."):
+        if path.name in {"css", "js", "images", "proekti", "__pycache__"} or path.name.startswith("."):
             continue
         if path.name not in active_slugs:
             shutil.rmtree(path)

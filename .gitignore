@@ -4,6 +4,8 @@ Desktop.ini
 .DS_Store
 *.tmp
 *.bak
+__pycache__/
+*.pyc
 
 # Secrets / scrapes — never publish
 cookies.txt

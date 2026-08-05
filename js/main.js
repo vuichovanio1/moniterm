@@ -8,6 +8,31 @@
     });
   }
 
+  document.querySelectorAll(".nav-dd").forEach(function (dd) {
+    var btn = dd.querySelector(".nav-dd-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = dd.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      document.querySelectorAll(".nav-dd").forEach(function (other) {
+        if (other !== dd) {
+          other.classList.remove("is-open");
+          var ob = other.querySelector(".nav-dd-toggle");
+          if (ob) ob.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  });
+
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".nav-dd.is-open").forEach(function (dd) {
+      dd.classList.remove("is-open");
+      var btn = dd.querySelector(".nav-dd-toggle");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    });
+  });
+
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(
       function (entries) {
