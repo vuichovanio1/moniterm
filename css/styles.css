@@ -495,7 +495,57 @@ p {
   margin: 0;
 }
 
-/* Area coverage grid — informational cards, not links */
+/* Area coverage — long-tail Q&A per city (not doorway URLs) */
+.area-chips {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+}
+
+.areas-faq {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 48rem;
+}
+
+.area-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.15rem 0.9rem 0.15rem;
+}
+
+.area-item summary {
+  cursor: pointer;
+  padding: 0.85rem 0.15rem;
+  font-family: var(--display);
+  font-size: 0.95rem;
+  list-style: none;
+}
+
+.area-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.area-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--muted);
+  font-family: var(--font);
+  font-weight: 600;
+}
+
+.area-item[open] summary::after {
+  content: "–";
+}
+
+.area-item p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 0.95rem;
+  line-height: 1.5;
+}
+
 .areas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

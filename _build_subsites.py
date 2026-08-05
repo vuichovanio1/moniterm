@@ -466,7 +466,7 @@ def header(depth: int, current: str = "") -> str:
       </button>
       <nav class="nav" id="site-nav" aria-label="Основна навигация">
         <div class="nav-dd">
-          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-controls="nav-services">Услуги</button>
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-controls="nav-services">Всички услуги</button>
           <div class="nav-dd-panel" id="nav-services">
 {svc_links}
           </div>
@@ -542,25 +542,145 @@ def write(path: Path, content: str) -> None:
     print("Wrote", path.relative_to(ROOT))
 
 
+def phrase_in_city(kw: str, city: str) -> str:
+    """Sentence-case long-tail without mangling acronyms (ВИК)."""
+    head = kw[:1].upper() + kw[1:] if kw else kw
+    return f"{head} в {city}"
+
+
 def areas_section(s: dict) -> str:
+    """Long-tail coverage on-page (no geo URLs): unique Q&A per city × service."""
     extra = HUB_CONTENT[s["slug"]]
-    cards = "\n".join(
-        f'          <article class="area-card"><h3>{c["name"]}</h3><p>{extra["areas"][c["slug"]]}</p></article>'
+    kw = s["keyword"]
+    items = "\n".join(
+        f"""          <details class="area-item">
+            <summary><strong>{phrase_in_city(kw, c["name"])}</strong></summary>
+            <p>{extra["areas"][c["slug"]]}</p>
+          </details>"""
         for c in CITIES
     )
+    chips = " · ".join(c["name"] for c in CITIES)
     return f"""
     <section class="section section-alt" id="rayoni">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Райони · {s["keyword"]}</p>
-          <h2>{s["name"]} в София и София област</h2>
+          <p class="eyebrow">Райони · без отделни geo страници</p>
+          <h2>{s["name"]} в София, Костинброд и областта</h2>
           <p>{extra["local"]}</p>
+          <p class="area-chips">{chips}</p>
         </div>
-        <div class="areas-grid">
-{cards}
+        <div class="areas-faq" role="list">
+{items}
         </div>
       </div>
     </section>"""
+
+
+def hub_headings(s: dict) -> dict[str, str]:
+    """Per-service H2 labels so 11 hubs don't share identical outline."""
+    kw = s["keyword"]
+    name = s["name"]
+    variants = {
+        "gazovi-kotli": {
+            "scope": f"Какво включва монтажът на газов котел",
+            "price": "Колко струва монтажът — ориентир",
+            "process": "От оглед до пускане на котела",
+            "where": f"Къде монтираме — {kw} по населени места",
+            "gallery": "Снимки от монтажа",
+            "faq": "Въпроси за газови котли",
+        },
+        "rezervuari-propan-butan": {
+            "scope": "Какво включва доставка и монтаж на резервоар",
+            "price": "Как се оферира резервоар пропан-бутан",
+            "process": "Логистика, изкоп и връзка",
+            "where": "Къде поставяме резервоари в областта",
+            "gallery": "Резервоари на терен",
+            "faq": "Въпроси за пропан-бутан",
+        },
+        "gazovi-trasea": {
+            "scope": "Какво покриват газовите трасета",
+            "price": "Ориентир за трасе — метри и сложност",
+            "process": "Трасиране и изпълнение",
+            "where": "Газови трасета по населени места",
+            "gallery": "От трасетата",
+            "faq": "Въпроси за газови трасета",
+        },
+        "uzakonyavane-gazovi-instalacii": {
+            "scope": "Какво включва узаконяването",
+            "price": "Документация — как се оферира",
+            "process": "Стъпки по узаконяване",
+            "where": "Узаконяване за обекти в областта",
+            "gallery": "От практиката",
+            "faq": "Въпроси за узаконяване",
+        },
+        "vodni-pompi": {
+            "scope": "Какво включва монтажът на водна помпа",
+            "price": "Помпа + труд — ориентир",
+            "process": "Оразмеряване и монтаж",
+            "where": "Водни помпи по населени места",
+            "gallery": "Помпи на обект",
+            "faq": "Въпроси за водни помпи",
+        },
+        "vodoprovodni-trasea": {
+            "scope": "Какво покриват водопроводните трасета",
+            "price": "Оферта според метри и терен",
+            "process": "Изграждане на трасето",
+            "where": "Водопроводни трасета в областта",
+            "gallery": "От трасетата",
+            "faq": "Въпроси за водопровод",
+        },
+        "klimatici": {
+            "scope": "Какво включва монтажът на климатик",
+            "price": "Монтаж климатик — ориентир",
+            "process": "Място, монтаж, вакуум, пускане",
+            "where": "Климатици по населени места",
+            "gallery": "Монтажи на климатици",
+            "faq": "Въпроси за климатици",
+        },
+        "omekotyavane-na-voda": {
+            "scope": "Какво включва омекотителната система",
+            "price": "Омекотител — ориентир след оглед",
+            "process": "Измерване, монтаж, настройка",
+            "where": "Омекотители в София област",
+            "gallery": "Системи на обект",
+            "faq": "Въпроси за омекотяване",
+        },
+        "vik-uslugi": {
+            "scope": "Какъв е обхватът на ВИК услугите",
+            "price": "ВИК ремонт — как се оферира",
+            "process": "Диагностика и ремонт",
+            "where": "ВИК по населени места",
+            "gallery": "От ВИК обекти",
+            "faq": "Въпроси за ВИК",
+        },
+        "elektrodifuzno-zavarqvane-pe-hd": {
+            "scope": "Какво включва РЕ-HD заваряването",
+            "price": "Оферта по брой съединения",
+            "process": "Подготовка и заваряване",
+            "where": "РЕ-HD заваряване в областта",
+            "gallery": "Заварки на терен",
+            "faq": "Въпроси за РЕ-HD",
+        },
+        "diamanteno-probivane": {
+            "scope": "Какво включва диамантеното пробиване",
+            "price": "Ориентир според диаметър и материал",
+            "process": "Маркиране, пробиване, почистване",
+            "where": "Диамантено пробиване по населени места",
+            "gallery": "Пробивания на терен",
+            "faq": "Въпроси за диамантено пробиване",
+        },
+    }
+    return variants.get(
+        s["slug"],
+        {
+            "scope": f"Какво включва „{kw}“",
+            "price": "Ценови ориентир",
+            "process": "Как работим",
+            "where": f"Къде работим — {kw}",
+            "gallery": "От терена",
+            "faq": "Често задавани въпроси",
+        },
+    )
 
 
 def hub_process_blurb(s: dict) -> str:
@@ -598,21 +718,18 @@ def service_hub(s: dict) -> str:
         f'          <article class="process-item"><h3>{t}</h3><p>{d}</p></article>'
         for t, d in s["process"]
     )
-    # Merge base FAQs + price + long-tail city FAQs
+    h2 = hub_headings(s)
+    kw = s["keyword"]
+    # Merge base FAQs + price + long-tail city FAQs (service×city without doorway URLs)
     faqs = list(s["faqs"])
-    faqs.insert(0, ("Какъв е ценовият ориентир?", extra["price_note"]))
-    faqs.append(
-        (
-            f"Правите ли {s['keyword']} в София и София област?",
-            f"Да — база Костинброд. Обслужваме София, Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя и Нови Искър. Обадете се на {PHONE}.",
+    faqs.insert(0, (f"Какъв е ценовият ориентир за {kw}?", extra["price_note"]))
+    for c in CITIES:
+        faqs.append(
+            (
+                f"{phrase_in_city(kw, c['name'])} — работите ли?",
+                f"{extra['areas'][c['slug']]} Обадете се на {PHONE} за оглед.",
+            )
         )
-    )
-    faqs.append(
-        (
-            f"Има ли разлика за {s['keyword']} в Костинброд и в София?",
-            "Обхватът на услугата е същият; в Костинброд реакцията е най-бърза, защото е нашата база. В София планираме достъпа и логистиката предварително.",
-        )
-    )
     faqs_html = "\n".join(
         f"""          <details><summary>{q}</summary><p>{a}</p></details>""" for q, a in faqs
     )
@@ -634,6 +751,36 @@ def service_hub(s: dict) -> str:
     related_svc_html = "\n".join(
         f'            <li><a href="{p}{x["slug"]}/">{x["name"]}</a></li>' for x in related_services
     )
+
+    # Vary mid-page order: proof-first for hubs that have a case study
+    proof_block = related_html
+    where_inline = f"""
+          <h2>{h2["where"]}</h2>
+          <p>{extra["local"]}</p>
+          <p><a href="#rayoni">Вижте покритието по населени места ↓</a></p>"""
+
+    if related:
+        body_mid = f"""{proof_block}
+{where_inline}
+          <h2>{h2["process"]}</h2>
+          <div class="process" style="margin:1.2rem 0 1.5rem">
+{process_html}
+          </div>
+          <h2>{h2["gallery"]}</h2>
+          <div class="gallery">
+{gallery_html}
+          </div>"""
+    else:
+        body_mid = f"""
+          <h2>{h2["process"]}</h2>
+          <div class="process" style="margin:1.2rem 0 1.5rem">
+{process_html}
+          </div>
+{where_inline}
+          <h2>{h2["gallery"]}</h2>
+          <div class="gallery">
+{gallery_html}
+          </div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="bg">
@@ -725,28 +872,18 @@ def service_hub(s: dict) -> str:
       <div class="container content-layout">
         <article class="prose">
           <figure><img src="{p}images/{s["image"]}" alt="{s["name"]} — Мони Терм ЕООД" width="1000" height="700" loading="eager"></figure>
-          <h2>Какво включва „{s["keyword"]}“</h2>
+          <h2>{h2["scope"]}</h2>
           <p>{hub_process_blurb(s)}</p>
           <p>{s["detail"]}</p>
 {more_html}
           <ul>
 {bullets}
           </ul>
-          <h2>Ценови ориентир</h2>
+          <h2>{h2["price"]}</h2>
           <p>{extra["price_note"]}</p>
           <p><strong>Какво не е включено / уточняваме честно:</strong> {extra["not_included"]}</p>
-          <h2>Как работим</h2>
-          <div class="process" style="margin:1.2rem 0 1.5rem">
-{process_html}
-          </div>
-          <h2>Къде работим — {s["keyword"]} по населени места</h2>
-          <p>{extra["local"]}</p>
-          <h2>От терена</h2>
-          <div class="gallery">
-{gallery_html}
-          </div>
-{related_html}
-          <h2>Често задавани въпроси</h2>
+{body_mid}
+          <h2>{h2["faq"]}</h2>
           <div class="faq">{faqs_html}</div>
         </article>
         <aside class="side-panel">
