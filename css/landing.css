@@ -429,14 +429,39 @@ p {
   background: rgba(8, 11, 16, 0.96);
   border-top: 1px solid var(--line);
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 0.55rem;
+  grid-template-columns: 1.15fr 0.95fr 0.9fr;
+  gap: 0.45rem;
 }
 
-.lp-sticky .btn {
+.lp-sticky .btn,
+.lp-sticky .btn-fb {
   min-height: 50px;
+  font-size: 0.88rem;
+  padding: 0.65rem 0.55rem;
+}
+
+/* Facebook CTA */
+.btn-fb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  background: #1877f2;
+  color: #fff !important;
+  font-weight: 700;
   font-size: 0.95rem;
-  padding: 0.7rem 0.8rem;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(24, 119, 242, 0.35);
+}
+
+.btn-fb:hover {
+  background: #166fe5;
+}
+
+.fb-icon {
+  flex-shrink: 0;
 }
 
 @media (min-width: 760px) {

@@ -16,6 +16,11 @@ PHONE = "0886 391 729"
 EMAIL = "moni.term@abv.bg"
 ADDRESS = "ул. Славянска, 2230 Костинброд"
 FB = "https://www.facebook.com/profile.php?id=100063597367628"
+FB_ICON = (
+    '<svg class="fb-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">'
+    '<path fill="currentColor" d="M14 8.2h2.2V5h-2.2C11.7 5 10 6.8 10 9.2V11H8v3.2h2V21h3.2v-6.8h2.3L16 11h-2.8V9.2c0-.6.4-1 1-1z"/>'
+    "</svg>"
+)
 # Official Google Business Profile (same entity as Facebook)
 MAPS = "https://www.google.com/maps?cid=4408469897849908317"
 MAPS_EMBED = "https://www.google.com/maps?q=42.8081319,23.2032583&z=17&hl=bg&output=embed"
@@ -445,6 +450,23 @@ def rel_prefix(depth: int) -> str:
     return "../" * depth if depth else ""
 
 
+def fb_btn(extra_class: str = "", label: str = "Вижте ни във Facebook") -> str:
+    """Visible Facebook CTA — clear Bulgarian label + brand color."""
+    cls = f"btn-fb {extra_class}".strip()
+    return (
+        f'<a class="{cls}" href="{FB}" target="_blank" rel="noopener noreferrer">'
+        f"{FB_ICON}<span>{label}</span></a>"
+    )
+
+
+def fb_float() -> str:
+    return (
+        f'<a class="fb-float" href="{FB}" target="_blank" rel="noopener noreferrer" '
+        f'aria-label="Вижте ни във Facebook — Мони Терм ЕООД">'
+        f"{FB_ICON}<span>Facebook</span></a>"
+    )
+
+
 def header(depth: int, current: str = "") -> str:
     p = rel_prefix(depth)
 
@@ -474,6 +496,7 @@ def header(depth: int, current: str = "") -> str:
         <a href="{p}proekti/"{cur("proekti")}>Обекти</a>
         <a href="{p}oferta.html">Оферта</a>
         <a href="{p}kontakt.html">Контакт</a>
+        {fb_btn("btn-fb--nav", "Facebook")}
         <a class="nav-cta" href="tel:{TEL}">{PHONE}</a>
       </nav>
     </div>
@@ -496,6 +519,7 @@ def footer(depth: int) -> str:
           </a>
           <p style="margin-top:1rem">{ADDRESS}. Газ, вода и монтаж за София и София област.</p>
           <p style="font-size:.85rem;color:var(--muted)">Райони: {cities}.</p>
+          <p style="margin-top:1rem">{fb_btn("", "Вижте ни във Facebook")}</p>
         </div>
         <div>
           <h3>Услуги</h3>
@@ -511,7 +535,6 @@ def footer(depth: int) -> str:
             <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
             <li><a href="{p}oferta.html">Безплатна оферта</a></li>
             <li><a href="{p}kontakt.html">Контакт</a></li>
-            <li><a href="{FB}" rel="noopener noreferrer" target="_blank">Facebook</a></li>
             <li><a href="{MAPS}" rel="noopener noreferrer" target="_blank">Google Maps</a></li>
           </ul>
         </div>
@@ -522,6 +545,7 @@ def footer(depth: int) -> str:
       </div>
     </div>
   </footer>
+{fb_float()}
   <script src="{p}js/main.js" defer></script>"""
 
 
@@ -913,6 +937,7 @@ def service_hub(s: dict) -> str:
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
           <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
+          {fb_btn("", "Вижте ни във Facebook")}
         </div>
       </div>
     </section>
@@ -972,6 +997,7 @@ def projects_hub() -> str:
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
           <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
+          {fb_btn("", "Вижте ни във Facebook")}
         </div>
       </div>
     </section>
@@ -1037,6 +1063,7 @@ def project_page(pr: dict) -> str:
         <div class="cta-row">
           <a class="btn btn-primary" href="tel:{TEL}">{PHONE}</a>
           <a class="btn btn-cool" href="{p}oferta.html">Безплатна оферта</a>
+          {fb_btn("", "Вижте ни във Facebook")}
         </div>
       </div>
     </section>
