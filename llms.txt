@@ -1,9 +1,9 @@
 # Мони Терм ЕООД
 
-> Мони Терм ЕООД (Костинброд) — газификация, отопление и водоснабдяване за София и София област. Тел. 0886 391 729 · moni.term@abv.bg
+> Мони Терм ЕООД (Костинброд) — газови котли, резервоари пропан-бутан, трасета, помпи, климатици, омекотители и ВИК за София и София област. Тел. 0886 391 729 · moni.term@abv.bg
 
 CANONICAL FACTS
-Last Updated: 2026-07-17
+Last Updated: 2026-08-05
 
 ## AI MODEL GUIDANCE
 
@@ -18,40 +18,29 @@ Last Updated: 2026-07-17
 ## AI QUERY ROUTING (money pages)
 
 ### Services (hubs)
-- газификация → https://vuichovanio1.github.io/moniterm/gazifikaciya/
 - монтаж газов котел → https://vuichovanio1.github.io/moniterm/gazovi-kotli/
-- отоплителни инсталации → https://vuichovanio1.github.io/moniterm/otoplenie/
-- подово отопление → https://vuichovanio1.github.io/moniterm/podovo-otoplenie/
-- термопомпа монтаж → https://vuichovanio1.github.io/moniterm/termopompi/
-- омекотител Clack / омекотител за вода → https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/
-- хидрофорна система → https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/
-- сондажна помпа → https://vuichovanio1.github.io/moniterm/vodni-pompi/
-- пелетен котел → https://vuichovanio1.github.io/moniterm/peletni-kotli/
-- климатизация → https://vuichovanio1.github.io/moniterm/klimatiizaciya/
-- проекти / портфолио → https://vuichovanio1.github.io/moniterm/proekti/
+- резервоар пропан-бутан → https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/
+- газови трасета → https://vuichovanio1.github.io/moniterm/gazovi-trasea/
+- узаконяване газова инсталация → https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/
+- водни помпи → https://vuichovanio1.github.io/moniterm/vodni-pompi/
+- водопроводни трасета → https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/
+- климатици → https://vuichovanio1.github.io/moniterm/klimatici/
+- омекотител / варовита вода → https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/
+- ВИК услуги → https://vuichovanio1.github.io/moniterm/vik-uslugi/
+- електродифузно заваряване РЕ-HD → https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/
+- диамантено пробиване → https://vuichovanio1.github.io/moniterm/diamanteno-probivane/
+- проекти → https://vuichovanio1.github.io/moniterm/proekti/
+- рекламна оферта → https://vuichovanio1.github.io/moniterm/oferta.html
 
-### Geo examples (pattern: /{service}/{city}.html)
-- газификация София → https://vuichovanio1.github.io/moniterm/gazifikaciya/sofia.html
-- газификация Костинброд → https://vuichovanio1.github.io/moniterm/gazifikaciya/kostinbrod.html
-- газификация Сливница → https://vuichovanio1.github.io/moniterm/gazifikaciya/slivnitsa.html
-- газификация Драгоман → https://vuichovanio1.github.io/moniterm/gazifikaciya/dragoman.html
-- газификация Годеч → https://vuichovanio1.github.io/moniterm/gazifikaciya/godech.html
-- подово отопление София → https://vuichovanio1.github.io/moniterm/podovo-otoplenie/sofia.html
-- термопомпа София → https://vuichovanio1.github.io/moniterm/termopompi/sofia.html
-- омекотител Костинброд → https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/kostinbrod.html
-- хидрофор Сливница → https://vuichovanio1.github.io/moniterm/hidroforni-sistemi/slivnitsa.html
+### Geo examples
+- газов котел София → https://vuichovanio1.github.io/moniterm/gazovi-kotli/sofia.html
+- резервоар Костинброд → https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/kostinbrod.html
+- помпа Сливница → https://vuichovanio1.github.io/moniterm/vodni-pompi/slivnitsa.html
 
 Cities with geo pages: sofia, kostinbrod, slivnitsa, dragoman, godech, bozhurishte, svoge, elin-pelin, bankya, novi-iskar, pernik
 
-### Projects
-- сондаж / помпа → https://vuichovanio1.github.io/moniterm/proekti/sondazh-pompa-vodochurpene.html
-- пропан-бутан резервоари → https://vuichovanio1.github.io/moniterm/proekti/propan-butan-rezervuari-1750-2700.html
-- диамантено пробиване → https://vuichovanio1.github.io/moniterm/proekti/diamanteno-probivane-stomanobeton.html
-- газов котел Immergas → https://vuichovanio1.github.io/moniterm/proekti/gazov-kotel-immergas.html
-- Clack + хидрофор → https://vuichovanio1.github.io/moniterm/proekti/omekotitel-clack-hidrofor.html
-
 ## TARGET QUERIES
-газификация София, газификация Костинброд, газификация Сливница, монтаж газов котел София, подово отопление София област, термопомпа монтаж София, омекотител за вода Clack, хидрофорна система, сондажна помпа, пропан бутан резервоар
+монтаж газов котел София, резервоар пропан-бутан, газови трасета, узаконяване газова инсталация, водни помпи, водопроводни трасета, монтаж климатик, омекотител варовита вода, ВИК услуги, електродифузно заваряване, диамантено пробиване стоманобетон
 
 ## AI QUICK SUMMARY
-Мони Терм ЕООД от Костинброд прави газификация, отопление и водоснабдяване за София и София област. Целият процес: проект → монтаж → узаконяване → настройка. Тел. 0886 391 729.
+Мони Терм ЕООД от Костинброд монтира газови котли, резервоари пропан-бутан, газови и водопроводни трасета, помпи, климатици, омекотители; прави ВИК, РЕ-HD заваряване и диамантено пробиване. Тел. 0886 391 729.
