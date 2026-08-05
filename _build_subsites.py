@@ -9,7 +9,6 @@ from pathlib import Path
 
 ROOT = Path(r"C:\repos\moniterm")
 DOMAIN = "https://vuichovanio1.github.io/moniterm"
-BASE = "/moniterm"
 TEL = "+359886391729"
 PHONE = "0886 391 729"
 EMAIL = "moni.term@abv.bg"
@@ -863,26 +862,6 @@ def project_page(pr: dict) -> str:
 """
 
 
-def redirect_page(path: str) -> str:
-    abs_url = f"{DOMAIN}{path}"
-    browser = f"{BASE}{path}"
-    return f"""<!DOCTYPE html>
-<html lang="bg">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url={browser}">
-  <link rel="canonical" href="{abs_url}">
-  <title>Преместване към {path}</title>
-  <script>location.replace("{browser}");</script>
-</head>
-<body>
-  <p>Страницата е преместена: <a href="{browser}">{abs_url}</a></p>
-</body>
-</html>
-"""
-
-
 def build_sitemap(urls: list[tuple[str, str, str]]) -> str:
     body = "\n".join(
         f"""  <url>
@@ -917,7 +896,6 @@ def main() -> None:
     for s in SERVICES:
         write(ROOT / s["slug"] / "index.html", service_hub(s))
         sitemap_urls.append((f"/{s['slug']}/", "monthly", "0.9"))
-        write(ROOT / f"{s['slug']}.html", redirect_page(f"/{s['slug']}/"))
 
         # Remove any leftover geo / orphan html inside service folder
         svc_dir = ROOT / s["slug"]
@@ -925,6 +903,12 @@ def main() -> None:
             if f.name != "index.html":
                 f.unlink()
                 print("Removed", f.relative_to(ROOT))
+
+        # Remove obsolete root redirect stub if present
+        stub = ROOT / f"{s['slug']}.html"
+        if stub.exists():
+            stub.unlink()
+            print("Removed", stub.name)
 
     # Remove obsolete service folders
     for path in list(ROOT.iterdir()):

@@ -1,7 +1,16 @@
-__pycache__/
-*.pyc
-.DS_Store
+# OS / editor
 Thumbs.db
-*.log
-.vscode/
-.idea/
+Desktop.ini
+.DS_Store
+*.tmp
+*.bak
+
+# Secrets / scrapes — never publish
+cookies.txt
+**/cookies.txt
+images/facebook/
+
+# Local tooling
+.vs/
+.env
+.env.*
