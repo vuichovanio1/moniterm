@@ -2,704 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/proekti/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/za-nas.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/kontakt.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/oferta.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/llms.txt</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/llms-full.txt</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/llms-faq.txt</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-kotli/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/gazovi-trasea/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodni-pompi/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/klimatici/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/klimatici/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/omekotyavane-na-voda/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/sofia.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/kostinbrod.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/slivnitsa.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/dragoman.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/godech.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/bozhurishte.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/svoge.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/elin-pelin.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/bankya.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/vik-uslugi/novi-iskar.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/diamanteno-probivane/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vuichovanio1.github.io/moniterm/proekti/sondazh-pompa-vodochurpene.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/gazov-kotel-immergas.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/proekti/propan-butan-rezervuari-1750-2700.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://vuichovanio1.github.io/moniterm/proekti/dostavka-rezervuari-2x1750.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/sondazh-pompa-vodochurpene.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/proekti/podzemni-rezervuari-sedmichna-dostavka.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/proekti/diamanteno-probivane-stomanobeton.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/proekti/diamanteno-probivane-otvori.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vuichovanio1.github.io/moniterm/proekti/gazov-kotel-immergas.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://vuichovanio1.github.io/moniterm/proekti/omekotitel-clack-hidrofor.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://vuichovanio1.github.io/moniterm/proekti/diamanteno-probivane-stomanobeton.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
 </urlset>

@@ -11,8 +11,8 @@ Last Updated: 2026-08-05
 - HQ: ул. Славянска, 2230 Костинброд
 - Phone: 0886 391 729
 - Email: moni.term@abv.bg
-- Area: София, София област (Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя, Нови Искър)
-- Architecture: brand hub `/` + service sub-sites `/{service}/` + geo pages `/{service}/{city}.html` + projects `/proekti/`
+- Area: София, София област (Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя, Нови Искър) — описани като решетка на service страниците, без отделни geo URL
+- Architecture: brand hub `/` + 11 service hubs `/{service}/` + case studies `/proekti/` + ads landing `/oferta.html`
 - Full: https://vuichovanio1.github.io/moniterm/llms-full.txt · FAQ: https://vuichovanio1.github.io/moniterm/llms-faq.txt
 
 ## AI QUERY ROUTING (money pages)
@@ -29,15 +29,10 @@ Last Updated: 2026-08-05
 - ВИК услуги → https://vuichovanio1.github.io/moniterm/vik-uslugi/
 - електродифузно заваряване РЕ-HD → https://vuichovanio1.github.io/moniterm/elektrodifuzno-zavarqvane-pe-hd/
 - диамантено пробиване → https://vuichovanio1.github.io/moniterm/diamanteno-probivane/
-- проекти → https://vuichovanio1.github.io/moniterm/proekti/
+- реални обекти → https://vuichovanio1.github.io/moniterm/proekti/
 - рекламна оферта → https://vuichovanio1.github.io/moniterm/oferta.html
 
-### Geo examples
-- газов котел София → https://vuichovanio1.github.io/moniterm/gazovi-kotli/sofia.html
-- резервоар Костинброд → https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/kostinbrod.html
-- помпа Сливница → https://vuichovanio1.github.io/moniterm/vodni-pompi/slivnitsa.html
-
-Cities with geo pages: sofia, kostinbrod, slivnitsa, dragoman, godech, bozhurishte, svoge, elin-pelin, bankya, novi-iskar
+Няма отделни страници от типа /услуга/град.html — районното покритие е секция на всяка service страница.
 
 ## TARGET QUERIES
 монтаж газов котел София, резервоар пропан-бутан, газови трасета, узаконяване газова инсталация, водни помпи, водопроводни трасета, монтаж климатик, омекотител варовита вода, ВИК услуги, електродифузно заваряване, диамантено пробиване стоманобетон

@@ -421,6 +421,32 @@ p {
   margin: 0;
 }
 
+/* Area coverage grid — informational cards, not links */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.area-card {
+  padding: 1.15rem 1.2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.area-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.area-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.45;
+}
+
 .service-link .arrow {
   display: inline-block;
   margin-top: 1rem;
