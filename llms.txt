@@ -11,7 +11,7 @@ Last Updated: 2026-08-05
 - HQ: ул. Славянска, 2230 Костинброд
 - Phone: 0886 391 729
 - Email: moni.term@abv.bg
-- Area: София, София област (Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя, Нови Искър) + Перник
+- Area: София, София област (Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя, Нови Искър)
 - Architecture: brand hub `/` + service sub-sites `/{service}/` + geo pages `/{service}/{city}.html` + projects `/proekti/`
 - Full: https://vuichovanio1.github.io/moniterm/llms-full.txt · FAQ: https://vuichovanio1.github.io/moniterm/llms-faq.txt
 
@@ -37,7 +37,7 @@ Last Updated: 2026-08-05
 - резервоар Костинброд → https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/kostinbrod.html
 - помпа Сливница → https://vuichovanio1.github.io/moniterm/vodni-pompi/slivnitsa.html
 
-Cities with geo pages: sofia, kostinbrod, slivnitsa, dragoman, godech, bozhurishte, svoge, elin-pelin, bankya, novi-iskar, pernik
+Cities with geo pages: sofia, kostinbrod, slivnitsa, dragoman, godech, bozhurishte, svoge, elin-pelin, bankya, novi-iskar
 
 ## TARGET QUERIES
 монтаж газов котел София, резервоар пропан-бутан, газови трасета, узаконяване газова инсталация, водни помпи, водопроводни трасета, монтаж климатик, омекотител варовита вода, ВИК услуги, електродифузно заваряване, диамантено пробиване стоманобетон
