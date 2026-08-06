@@ -560,20 +560,48 @@ p {
 }
 
 .service-link {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 1.25rem 1.2rem;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
-  transition: border-color 0.25s, transform 0.25s, background 0.25s;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    border-color 0.22s ease,
+    transform 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
   min-height: 100%;
 }
 
-.service-link:hover {
-  border-color: rgba(226, 74, 43, 0.45);
+.service-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--heat), var(--cool));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+  z-index: 1;
+}
+
+.service-link:hover,
+.service-link:focus-visible {
+  border-color: rgba(226, 74, 43, 0.4);
   transform: translateY(-3px);
-  background: linear-gradient(160deg, rgba(226, 74, 43, 0.1), rgba(31, 143, 216, 0.06));
+  background: linear-gradient(165deg, rgba(226, 74, 43, 0.1), rgba(31, 143, 216, 0.06));
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.service-link:hover::before,
+.service-link:focus-visible::before {
+  transform: scaleX(1);
 }
 
 .service-link h3 {
@@ -589,6 +617,22 @@ p {
   margin: 0;
   line-height: 1.45;
   flex: 1;
+}
+
+.service-link .arrow {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--heat-soft);
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: transform 0.22s ease, color 0.22s ease;
+}
+
+.service-link:hover .arrow,
+.service-link:focus-visible .arrow {
+  transform: translateX(4px);
+  color: #ff8a68;
 }
 
 /* Area coverage — long-tail Q&A per city (not doorway URLs) */
@@ -609,6 +653,12 @@ p {
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.02);
   padding: 0.15rem 0.9rem 0.15rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.area-item:hover {
+  border-color: rgba(77, 176, 239, 0.28);
+  background: rgba(255, 255, 255, 0.035);
 }
 
 .area-item summary {
@@ -649,10 +699,42 @@ p {
 }
 
 .area-card {
+  position: relative;
   padding: 1.15rem 1.2rem;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+  transition:
+    border-color 0.22s ease,
+    transform 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.area-card::after {
+  content: "";
+  position: absolute;
+  right: -20%;
+  top: -40%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(31, 143, 216, 0.14), transparent 70%);
+  pointer-events: none;
+  opacity: 0.55;
+  transition: opacity 0.22s ease;
+}
+
+.area-card:hover {
+  border-color: rgba(31, 143, 216, 0.35);
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.area-card:hover::after {
+  opacity: 1;
 }
 
 .area-card h3 {
@@ -665,15 +747,6 @@ p {
   font-size: 0.9rem;
   margin: 0;
   line-height: 1.45;
-}
-
-.service-link .arrow {
-  display: inline-block;
-  margin-top: auto;
-  padding-top: 1rem;
-  color: var(--heat-soft);
-  font-weight: 700;
-  font-size: 0.88rem;
 }
 
 /* Split */
@@ -695,6 +768,7 @@ p {
   border-radius: 18px;
   overflow: hidden;
   min-height: 360px;
+  border: 1px solid var(--line);
 }
 
 .split-media img {
@@ -702,6 +776,11 @@ p {
   height: 100%;
   object-fit: cover;
   min-height: 360px;
+  transition: transform 0.55s ease;
+}
+
+.split-media:hover img {
+  transform: scale(1.03);
 }
 
 .split-media::after {
@@ -831,6 +910,11 @@ p {
   padding-top: 1rem;
   border-top: 2px solid transparent;
   border-image: linear-gradient(90deg, var(--heat), var(--cool)) 1;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.process-item:hover {
+  transform: translateY(-2px);
 }
 
 .process-item::before {
@@ -865,6 +949,20 @@ p {
   .trust-strip {
     grid-template-columns: 1fr;
   }
+}
+
+.trust-item {
+  padding: 1rem 1.05rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.trust-item:hover {
+  border-color: rgba(226, 74, 43, 0.3);
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .trust-item strong {
@@ -966,7 +1064,10 @@ p {
   padding: 1.35rem;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  background: var(--ink-2);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 40%),
+    var(--ink-2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
 }
 
 .side-panel h2 {
@@ -1015,6 +1116,12 @@ p {
 .faq details {
   border-bottom: 1px solid var(--line);
   padding: 1rem 0;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.faq details:hover {
+  background: rgba(255, 255, 255, 0.02);
+  padding-left: 0.35rem;
 }
 
 .faq summary {
@@ -1084,10 +1191,21 @@ p {
 }
 
 .contact-card {
+  position: relative;
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--ink-2);
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.04), transparent 45%),
+    var(--ink-2);
+  overflow: hidden;
+  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.contact-card:hover {
+  border-color: rgba(77, 176, 239, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
 }
 
 .contact-social {
@@ -1111,6 +1229,7 @@ p {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--ink-2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
 .map-frame iframe {
@@ -1249,6 +1368,20 @@ p {
 
   .reveal {
     opacity: 1;
+    transform: none;
+  }
+
+  .service-link:hover,
+  .area-card:hover,
+  .contact-card:hover,
+  .trust-item:hover,
+  .process-item:hover {
+    transform: none;
+  }
+
+  .service-link:hover .arrow,
+  .split-media:hover img,
+  .gallery figure:hover img {
     transform: none;
   }
 }
