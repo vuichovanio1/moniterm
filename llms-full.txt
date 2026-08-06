@@ -32,6 +32,7 @@
 | Доставка и монтаж на Резервоари за пропан бутан | https://vuichovanio1.github.io/moniterm/rezervuari-propan-butan/ |
 | Изграждане на Газови Трасета | https://vuichovanio1.github.io/moniterm/gazovi-trasea/ |
 | Узаконяване на сградни газови инсталации | https://vuichovanio1.github.io/moniterm/uzakonyavane-gazovi-instalacii/ |
+| Изграждане на подово отопление | https://vuichovanio1.github.io/moniterm/podovo-otoplenie/ |
 | Водни Помпи и помпено оборудване | https://vuichovanio1.github.io/moniterm/vodni-pompi/ |
 | Изграждане на водопроводни трасета | https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/ |
 | Монтаж и доставка на климатици | https://vuichovanio1.github.io/moniterm/klimatici/ |
@@ -43,7 +44,7 @@
 | Оферта (ads) | https://vuichovanio1.github.io/moniterm/oferta.html |
 | Контакт | https://vuichovanio1.github.io/moniterm/kontakt.html |
 
-Фирмата НЕ предлага като отделни услуги: подово отопление, термопомпи, пелетни котли, обща „газификация“ като отделна страница (покрито от котли/резервоари/трасета/узаконяване).
+Фирмата НЕ предлага като отделни услуги: термопомпи, пелетни котли, обща „газификация“ като отделна страница (покрито от котли/резервоари/трасета/узаконяване).
 
 Няма geo URL-и от типа /услуга/град.html. Районите са описани като секция на всяка service страница.
 
