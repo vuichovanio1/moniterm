@@ -27,6 +27,9 @@ MAPS_EMBED = "https://www.google.com/maps?q=42.8081319,23.2032583&z=17&hl=bg&out
 GEO_LAT = "42.8081319"
 GEO_LNG = "23.2032583"
 TODAY = date.today().isoformat()
+MOVER_URL = "https://moverstudio.online/"
+MOVER_NAME = "MOVER Studio"
+MOVER_ID = "https://moverstudio.online/#organization"
 
 # Coverage shown as on-page area grid (not separate URLs)
 CITIES = [
@@ -550,6 +553,8 @@ def website_entity() -> dict:
         "url": f"{DOMAIN}/",
         "name": "Мони Терм ЕООД",
         "publisher": {"@id": ORG_ID},
+        "creator": {"@id": MOVER_ID},
+        "author": {"@id": MOVER_ID},
         "inLanguage": "bg-BG",
     }
 
@@ -607,12 +612,57 @@ def header(depth: int, current: str = "") -> str:
   </header>"""
 
 
-def footer(depth: int) -> str:
+def mover_organization() -> dict:
+    return {
+        "@type": "Organization",
+        "@id": MOVER_ID,
+        "name": MOVER_NAME,
+        "alternateName": ["Mover Studio", "MOVER"],
+        "url": MOVER_URL,
+        "description": (
+            "Уеб разработка, SEO оптимизация и техническа реализация на HTML сайтове."
+        ),
+    }
+
+
+def mover_link_html() -> str:
+    return (
+        f'<a class="mover-credit" href="{MOVER_URL}" target="_blank" '
+        f'rel="noopener noreferrer">{MOVER_NAME}</a>'
+    )
+
+
+def mover_credit_phrase(kind: str = "default") -> str:
+    """Vary footer credit wording by page type (still natural Bulgarian)."""
+    link = mover_link_html()
+    phrases = {
+        "home": f"Уеб разработка и SEO: {link}",
+        "service": f"Сайтът е изработен от {link}",
+        "service_seo": f"SEO и техническа оптимизация — {link}",
+        "service_dev": f"HTML разработка: {link}",
+        "service_design": f"Дизайн и локално SEO от {link}",
+        "projects": f"Портфолио страница — разработка {link}",
+        "case": f"Кейс страница от {link}",
+        "kontakt": f"Техническа реализация: {link}",
+        "oferta": f"Landing страница и оптимизация: {link}",
+        "za-nas": f"Автор на сайта, разработчик и SEO: {link}",
+        "default": f"Изработка и SEO: {link}",
+    }
+    return phrases.get(kind, phrases["default"])
+
+
+def service_credit_kind(slug: str) -> str:
+    variants = ["service", "service_seo", "service_dev", "service_design"]
+    return variants[sum(ord(c) for c in slug) % len(variants)]
+
+
+def footer(depth: int, credit_kind: str = "default") -> str:
     p = rel_prefix(depth)
     links = "\n".join(
         f'            <li><a href="{p}{s["slug"]}/">{s["name"]}</a></li>' for s in SERVICES
     )
     cities = ", ".join(c["name"] for c in CITIES)
+    credit = mover_credit_phrase(credit_kind)
     return f"""  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -645,6 +695,7 @@ def footer(depth: int) -> str:
       </div>
       <div class="footer-note">
         <span>© 2026 Мони Терм ЕООД</span>
+        <span class="footer-credit">{credit}</span>
         <span><a href="{p}llms.txt">llms.txt</a> · <a href="{p}sitemap.xml">Sitemap</a></span>
       </div>
     </div>
@@ -880,6 +931,7 @@ def service_hub(s: dict) -> str:
         [
             organization_entity(),
             local_business_entity(),
+            mover_organization(),
             website_entity(),
             breadcrumb_list([("Начало", f"{DOMAIN}/"), (s["name"], url)]),
             {
@@ -891,6 +943,9 @@ def service_hub(s: dict) -> str:
                 "isPartOf": {"@id": WS_ID},
                 "about": {"@id": service_id},
                 "provider": {"@id": LB_ID},
+                "author": {"@id": MOVER_ID},
+                "creator": {"@id": MOVER_ID},
+                "maintainer": {"@id": MOVER_ID},
                 "inLanguage": "bg-BG",
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
@@ -1042,7 +1097,7 @@ def service_hub(s: dict) -> str:
       </div>
     </section>
   </main>
-{footer(depth)}
+{footer(depth, service_credit_kind(s["slug"]))}
 </body>
 </html>
 """
@@ -1078,6 +1133,7 @@ def projects_hub() -> str:
         [
             organization_entity(),
             local_business_entity(),
+            mover_organization(),
             website_entity(),
             breadcrumb_list([("Начало", f"{DOMAIN}/"), ("Обекти", url)]),
             {
@@ -1091,6 +1147,9 @@ def projects_hub() -> str:
                 ),
                 "isPartOf": {"@id": WS_ID},
                 "about": {"@id": LB_ID},
+                "author": {"@id": MOVER_ID},
+                "creator": {"@id": MOVER_ID},
+                "maintainer": {"@id": MOVER_ID},
                 "inLanguage": "bg-BG",
                 "mainEntity": item_list,
             },
@@ -1139,7 +1198,7 @@ def projects_hub() -> str:
       </div>
     </section>
   </main>
-{footer(depth)}
+{footer(depth, "projects")}
 </body>
 </html>
 """
@@ -1165,6 +1224,7 @@ def project_page(pr: dict) -> str:
         [
             organization_entity(),
             local_business_entity(),
+            mover_organization(),
             website_entity(),
             breadcrumb_list(
                 [
@@ -1181,6 +1241,9 @@ def project_page(pr: dict) -> str:
                 "description": pr["desc"],
                 "isPartOf": {"@id": WS_ID},
                 "about": {"@id": LB_ID},
+                "author": {"@id": MOVER_ID},
+                "creator": {"@id": MOVER_ID},
+                "maintainer": {"@id": MOVER_ID},
                 "inLanguage": "bg-BG",
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
@@ -1194,7 +1257,8 @@ def project_page(pr: dict) -> str:
                 "name": pr["title"],
                 "description": pr["desc"],
                 "image": f"{DOMAIN}/images/{pr['image']}",
-                "author": {"@id": ORG_ID},
+                "author": {"@id": MOVER_ID},
+                "creator": {"@id": MOVER_ID},
                 "publisher": {"@id": ORG_ID},
                 "mainEntityOfPage": {"@id": f"{url}#webpage"},
                 "about": about_service or {"@id": LB_ID},
@@ -1256,7 +1320,7 @@ def project_page(pr: dict) -> str:
       </div>
     </section>
   </main>
-{footer(depth)}
+{footer(depth, "case")}
 </body>
 </html>
 """
