@@ -194,8 +194,11 @@ SERVICES = [
         ],
         "faqs": [
             ("Как да избера помпа?", "Нужни са дълбочина, дебит и желано налягане. Помагаме с оразмеряване."),
-            ("Монтирате ли в София област?", "Да — Костинброд, Сливница, Драгоман, Годеч и наоколо."),
-            ("Имате ли наличности?", "Обадете се на 0886 391 729."),
+            (
+                "В кои населени места монтирате помпи?",
+                "Работим в София и София област — Костинброд, Сливница, Драгоман, Годеч, Божурище, Своге, Елин Пелин, Банкя, Нови Искър и наоколо. По-долу на страницата има кратки бележки по места.",
+            ),
+            ("Имате ли наличности?", "Обадете се на 0886 391 729 — казваме какво има на склад и какво се поръчва."),
         ],
     },
     {
@@ -572,13 +575,21 @@ def phrase_in_city(kw: str, city: str) -> str:
     return f"{head} в {city}"
 
 
+def area_heading(s: dict, city_name: str) -> str:
+    """Natural Bulgarian title for area accordion/FAQ."""
+    extra = HUB_CONTENT[s["slug"]]
+    label = extra.get("area_label")
+    if label:
+        return label.format(city=city_name)
+    return phrase_in_city(s["keyword"], city_name)
+
+
 def areas_section(s: dict) -> str:
     """Long-tail coverage on-page (no geo URLs): unique Q&A per city × service."""
     extra = HUB_CONTENT[s["slug"]]
-    kw = s["keyword"]
     items = "\n".join(
         f"""          <details class="area-item">
-            <summary><strong>{phrase_in_city(kw, c["name"])}</strong></summary>
+            <summary><strong>{area_heading(s, c["name"])}</strong></summary>
             <p>{extra["areas"][c["slug"]]}</p>
           </details>"""
         for c in CITIES
@@ -588,7 +599,7 @@ def areas_section(s: dict) -> str:
     <section class="section section-alt" id="rayoni">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Райони · без отделни geo страници</p>
+          <p class="eyebrow">Къде работим</p>
           <h2>{s["name"]} в София, Костинброд и областта</h2>
           <p>{extra["local"]}</p>
           <p class="area-chips">{chips}</p>
@@ -744,16 +755,9 @@ def service_hub(s: dict) -> str:
     )
     h2 = hub_headings(s)
     kw = s["keyword"]
-    # Merge base FAQs + price + long-tail city FAQs (service×city without doorway URLs)
+    # Real FAQs only — city coverage lives in #rayoni (no "работите ли?" spam)
     faqs = list(s["faqs"])
     faqs.insert(0, (f"Какъв е ценовият ориентир за {kw}?", extra["price_note"]))
-    for c in CITIES:
-        faqs.append(
-            (
-                f"{phrase_in_city(kw, c['name'])} — работите ли?",
-                f"{extra['areas'][c['slug']]} Обадете се на {PHONE} за оглед.",
-            )
-        )
     faqs_html = "\n".join(
         f"""          <details><summary>{q}</summary><p>{a}</p></details>""" for q, a in faqs
     )
