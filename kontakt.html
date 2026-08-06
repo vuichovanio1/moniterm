@@ -22,35 +22,95 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Контакт | Мони Терм ЕООД",
-    "url": "https://vuichovanio1.github.io/moniterm/kontakt.html",
-    "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "Мони Терм ЕООД",
-      "alternateName": ["Moni Term EOOD", "МОНИ ТЕРМ ЕООД"],
-      "telephone": "+359886391729",
-      "email": "moni.term@abv.bg",
-      "url": "https://vuichovanio1.github.io/moniterm/",
-      "hasMap": "https://www.google.com/maps?cid=4408469897849908317",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "42.8081319",
-        "longitude": "23.2032583"
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Начало", "item": "https://vuichovanio1.github.io/moniterm/"},
+          {"@type": "ListItem", "position": 2, "name": "Контакт", "item": "https://vuichovanio1.github.io/moniterm/kontakt.html"}
+        ]
       },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "ул. Славянска",
-        "addressLocality": "Костинброд",
-        "postalCode": "2230",
-        "addressRegion": "София област",
-        "addressCountry": "BG"
+      {
+        "@type": "ContactPage",
+        "@id": "https://vuichovanio1.github.io/moniterm/kontakt.html#webpage",
+        "name": "Контакт | Мони Терм ЕООД",
+        "url": "https://vuichovanio1.github.io/moniterm/kontakt.html",
+        "description": "Контакт с Мони Терм ЕООД: телефон 0886 391 729, имейл moni.term@abv.bg, адрес ул. Славянска, Костинброд.",
+        "isPartOf": { "@id": "https://vuichovanio1.github.io/moniterm/#website" },
+        "mainEntity": { "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness" },
+        "inLanguage": "bg-BG"
       },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=100063597367628",
-        "https://www.google.com/maps?cid=4408469897849908317"
-      ]
-    }
+      {
+        "@type": "Organization",
+        "@id": "https://vuichovanio1.github.io/moniterm/#organization",
+        "name": "Мони Терм ЕООД",
+        "url": "https://vuichovanio1.github.io/moniterm/",
+        "logo": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
+        "telephone": "+359886391729",
+        "email": "moni.term@abv.bg"
+      },
+      {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness",
+        "name": "Мони Терм ЕООД",
+        "alternateName": ["Moni Term EOOD", "МОНИ ТЕРМ ЕООД"],
+        "telephone": "+359886391729",
+        "email": "moni.term@abv.bg",
+        "url": "https://vuichovanio1.github.io/moniterm/",
+        "image": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
+        "hasMap": "https://www.google.com/maps?cid=4408469897849908317",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "42.8081319",
+          "longitude": "23.2032583"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Славянска",
+          "addressLocality": "Костинброд",
+          "postalCode": "2230",
+          "addressRegion": "София област",
+          "addressCountry": "BG"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100063597367628",
+          "https://www.google.com/maps?cid=4408469897849908317"
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "София"},
+          {"@type": "City", "name": "Костинброд"},
+          {"@type": "City", "name": "Сливница"},
+          {"@type": "City", "name": "Драгоман"},
+          {"@type": "City", "name": "Годеч"},
+          {"@type": "City", "name": "Божурище"},
+          {"@type": "City", "name": "Своге"},
+          {"@type": "City", "name": "Елин Пелин"},
+          {"@type": "City", "name": "Банкя"},
+          {"@type": "City", "name": "Нови Искър"},
+          {"@type": "AdministrativeArea", "name": "София област"}
+        ],
+        "knowsAbout": [
+          "монтаж на газови котли",
+          "резервоари пропан-бутан",
+          "газови трасета",
+          "узаконяване на газови инсталации",
+          "водни помпи",
+          "водопроводни трасета",
+          "климатици",
+          "омекотителни системи",
+          "ВИК услуги",
+          "електродифузно заваряване РЕ-HD",
+          "диамантено пробиване"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+359886391729",
+          "contactType": "customer service",
+          "areaServed": "BG",
+          "availableLanguage": ["bg"]
+        }
+      }
+    ]
   }
   </script>
 </head>

@@ -470,6 +470,107 @@ def fb_float() -> str:
     )
 
 
+# --- Schema.org / JSON-LD -------------------------------------------------
+ORG_ID = f"{DOMAIN}/#organization"
+LB_ID = f"{DOMAIN}/#localbusiness"
+WS_ID = f"{DOMAIN}/#website"
+
+
+def area_served_schema() -> list[dict]:
+    cities = [{"@type": "City", "name": c["name"]} for c in CITIES]
+    cities.append({"@type": "AdministrativeArea", "name": "София област"})
+    return cities
+
+
+def postal_address() -> dict:
+    return {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Славянска",
+        "addressLocality": "Костинброд",
+        "postalCode": "2230",
+        "addressRegion": "София област",
+        "addressCountry": "BG",
+    }
+
+
+def organization_entity() -> dict:
+    return {
+        "@type": "Organization",
+        "@id": ORG_ID,
+        "name": "Мони Терм ЕООД",
+        "alternateName": ["Moni Term EOOD", "Мони Терм", "МОНИ ТЕРМ ЕООД"],
+        "url": f"{DOMAIN}/",
+        "logo": f"{DOMAIN}/images/logo.jpg",
+        "telephone": TEL,
+        "email": EMAIL,
+        "address": postal_address(),
+        "sameAs": [FB, MAPS],
+        "description": (
+            "Мони Терм ЕООД — газови котли, резервоари пропан-бутан, газови и водопроводни "
+            "трасета, помпи, климатици, омекотители, ВИК и диамантено пробиване."
+        ),
+    }
+
+
+def local_business_entity() -> dict:
+    return {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": LB_ID,
+        "name": "Мони Терм ЕООД",
+        "image": f"{DOMAIN}/images/logo.jpg",
+        "telephone": TEL,
+        "email": EMAIL,
+        "url": f"{DOMAIN}/",
+        "hasMap": MAPS,
+        "geo": {"@type": "GeoCoordinates", "latitude": GEO_LAT, "longitude": GEO_LNG},
+        "address": postal_address(),
+        "sameAs": [FB, MAPS],
+        "areaServed": area_served_schema(),
+        "parentOrganization": {"@id": ORG_ID},
+        "knowsAbout": [
+            "монтаж на газови котли",
+            "резервоари пропан-бутан",
+            "газови трасета",
+            "узаконяване на газови инсталации",
+            "водни помпи",
+            "водопроводни трасета",
+            "климатици",
+            "омекотителни системи",
+            "ВИК услуги",
+            "електродифузно заваряване РЕ-HD",
+            "диамантено пробиване",
+        ],
+    }
+
+
+def website_entity() -> dict:
+    return {
+        "@type": "WebSite",
+        "@id": WS_ID,
+        "url": f"{DOMAIN}/",
+        "name": "Мони Терм ЕООД",
+        "publisher": {"@id": ORG_ID},
+        "inLanguage": "bg-BG",
+    }
+
+
+def breadcrumb_list(items: list[tuple[str, str]]) -> dict:
+    """items: list of (name, absolute_url)."""
+    return {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "name": name, "item": url}
+            for i, (name, url) in enumerate(items, start=1)
+        ],
+    }
+
+
+def json_ld(graph: list[dict]) -> str:
+    payload = {"@context": "https://schema.org", "@graph": graph}
+    body = json.dumps(payload, ensure_ascii=False, indent=2)
+    return f'  <script type="application/ld+json">\n{body}\n  </script>'
+
+
 def header(depth: int, current: str = "") -> str:
     p = rel_prefix(depth)
 
@@ -765,12 +866,51 @@ def service_hub(s: dict) -> str:
     faqs_html = "\n".join(
         f"""          <details><summary>{q}</summary><p>{a}</p></details>""" for q, a in faqs
     )
-    faqs_json = ",\n".join(
-        json.dumps(
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}},
-            ensure_ascii=False,
-        )
+    faq_entities = [
+        {
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {"@type": "Answer", "text": a},
+        }
         for q, a in faqs
+    ]
+    page_id = f"{url}#webpage"
+    service_id = f"{url}#service"
+    schema_block = json_ld(
+        [
+            organization_entity(),
+            local_business_entity(),
+            website_entity(),
+            breadcrumb_list([("Начало", f"{DOMAIN}/"), (s["name"], url)]),
+            {
+                "@type": "WebPage",
+                "@id": page_id,
+                "url": url,
+                "name": s["title_hub"],
+                "description": s["desc_hub"],
+                "isPartOf": {"@id": WS_ID},
+                "about": {"@id": service_id},
+                "provider": {"@id": LB_ID},
+                "inLanguage": "bg-BG",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": f"{DOMAIN}/images/{s['image']}",
+                },
+            },
+            {
+                "@type": "Service",
+                "@id": service_id,
+                "name": s["name"],
+                "serviceType": s["keyword"],
+                "description": s["desc_hub"],
+                "url": url,
+                "image": f"{DOMAIN}/images/{s['image']}",
+                "provider": {"@id": LB_ID},
+                "areaServed": area_served_schema(),
+                "mainEntityOfPage": {"@id": page_id},
+            },
+            {"@type": "FAQPage", "mainEntity": faq_entities},
+        ]
     )
     bullets = "\n".join(f"            <li>{b}</li>" for b in s["bullets"])
     gallery = s.get("gallery") or [s["image"]]
@@ -832,55 +972,7 @@ def service_hub(s: dict) -> str:
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{DOMAIN}/images/{s["image"]}">
 {head_assets(depth)}
-  <script type="application/ld+json">
-  {{
-    "@context": "https://schema.org",
-    "@graph": [
-      {{
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {{"@type":"ListItem","position":1,"name":"Начало","item":"{DOMAIN}/"}},
-          {{"@type":"ListItem","position":2,"name":"{s["name"]}","item":"{url}"}}
-        ]
-      }},
-      {{
-        "@type": "Service",
-        "name": "{s["name"]}",
-        "serviceType": "{s["keyword"]}",
-        "provider": {{
-          "@type": "LocalBusiness",
-          "name": "Мони Терм ЕООД",
-          "telephone": "{TEL}",
-          "email": "{EMAIL}",
-          "url": "{DOMAIN}/",
-          "sameAs": ["{FB}", "{MAPS}"],
-          "hasMap": "{MAPS}",
-          "geo": {{
-            "@type": "GeoCoordinates",
-            "latitude": "{GEO_LAT}",
-            "longitude": "{GEO_LNG}"
-          }},
-          "address": {{
-            "@type": "PostalAddress",
-            "streetAddress": "ул. Славянска",
-            "addressLocality": "Костинброд",
-            "postalCode": "2230",
-            "addressRegion": "София област",
-            "addressCountry": "BG"
-          }}
-        }},
-        "areaServed": ["София", "София област", "Костинброд", "Сливница", "Драгоман", "Годеч", "Божурище", "Своге", "Елин Пелин", "Банкя", "Нови Искър"],
-        "url": "{url}",
-        "description": "{s["desc_hub"]}",
-        "image": "{DOMAIN}/images/{s["image"]}"
-      }},
-      {{
-        "@type": "FAQPage",
-        "mainEntity": [{faqs_json}]
-      }}
-    ]
-  }}
-  </script>
+{schema_block}
 </head>
 <body>
 {header(depth, s["nav"])}
@@ -968,6 +1060,42 @@ def projects_hub() -> str:
           </a>"""
         for pr in PROJECTS
     )
+    item_list = {
+        "@type": "ItemList",
+        "name": "Реални обекти — Мони Терм ЕООД",
+        "numberOfItems": len(PROJECTS),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i,
+                "url": f"{DOMAIN}/proekti/{pr['slug']}.html",
+                "name": pr["title"],
+            }
+            for i, pr in enumerate(PROJECTS, start=1)
+        ],
+    }
+    schema_block = json_ld(
+        [
+            organization_entity(),
+            local_business_entity(),
+            website_entity(),
+            breadcrumb_list([("Начало", f"{DOMAIN}/"), ("Обекти", url)]),
+            {
+                "@type": "CollectionPage",
+                "@id": f"{url}#webpage",
+                "url": url,
+                "name": "Реални обекти | Мони Терм ЕООД",
+                "description": (
+                    "Кейсове от обекти на Мони Терм: газови котли, резервоари пропан-бутан, "
+                    "помпи, омекотители, диамантено пробиване. София област."
+                ),
+                "isPartOf": {"@id": WS_ID},
+                "about": {"@id": LB_ID},
+                "inLanguage": "bg-BG",
+                "mainEntity": item_list,
+            },
+        ]
+    )
     return f"""<!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -980,6 +1108,7 @@ def projects_hub() -> str:
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="{DOMAIN}/images/moni1.jpg">
 {head_assets(depth)}
+{schema_block}
 </head>
 <body>
 {header(depth, "proekti")}
@@ -1024,6 +1153,56 @@ def project_page(pr: dict) -> str:
     svc_link = (
         f'<p>Свързана услуга: <a href="{p}{svc["slug"]}/">{svc["name"]}</a></p>' if svc else ""
     )
+    about_service = None
+    if svc:
+        about_service = {
+            "@type": "Service",
+            "name": svc["name"],
+            "url": f"{DOMAIN}/{svc['slug']}/",
+            "provider": {"@id": LB_ID},
+        }
+    schema_block = json_ld(
+        [
+            organization_entity(),
+            local_business_entity(),
+            website_entity(),
+            breadcrumb_list(
+                [
+                    ("Начало", f"{DOMAIN}/"),
+                    ("Обекти", f"{DOMAIN}/proekti/"),
+                    (pr["title"], url),
+                ]
+            ),
+            {
+                "@type": "WebPage",
+                "@id": f"{url}#webpage",
+                "url": url,
+                "name": f"{pr['title']} | Мони Терм",
+                "description": pr["desc"],
+                "isPartOf": {"@id": WS_ID},
+                "about": {"@id": LB_ID},
+                "inLanguage": "bg-BG",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": f"{DOMAIN}/images/{pr['image']}",
+                },
+            },
+            {
+                "@type": "Article",
+                "@id": f"{url}#article",
+                "headline": pr["h1"],
+                "name": pr["title"],
+                "description": pr["desc"],
+                "image": f"{DOMAIN}/images/{pr['image']}",
+                "author": {"@id": ORG_ID},
+                "publisher": {"@id": ORG_ID},
+                "mainEntityOfPage": {"@id": f"{url}#webpage"},
+                "about": about_service or {"@id": LB_ID},
+                "keywords": ", ".join(pr["tags"]),
+                "inLanguage": "bg-BG",
+            },
+        ]
+    )
     return f"""<!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -1035,6 +1214,7 @@ def project_page(pr: dict) -> str:
   <meta property="og:title" content="{pr["title"]} | Мони Терм">
   <meta property="og:image" content="{DOMAIN}/images/{pr["image"]}">
 {head_assets(depth)}
+{schema_block}
 </head>
 <body>
 {header(depth, "proekti")}

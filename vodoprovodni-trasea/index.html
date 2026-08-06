@@ -23,56 +23,276 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type":"ListItem","position":1,"name":"Начало","item":"https://vuichovanio1.github.io/moniterm/"},
-          {"@type":"ListItem","position":2,"name":"Изграждане на водопроводни трасета","item":"https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/"}
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vuichovanio1.github.io/moniterm/#organization",
+      "name": "Мони Терм ЕООД",
+      "alternateName": [
+        "Moni Term EOOD",
+        "Мони Терм",
+        "МОНИ ТЕРМ ЕООД"
+      ],
+      "url": "https://vuichovanio1.github.io/moniterm/",
+      "logo": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
+      "telephone": "+359886391729",
+      "email": "moni.term@abv.bg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Славянска",
+        "addressLocality": "Костинброд",
+        "postalCode": "2230",
+        "addressRegion": "София област",
+        "addressCountry": "BG"
       },
-      {
-        "@type": "Service",
-        "name": "Изграждане на водопроводни трасета",
-        "serviceType": "водопроводни трасета",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Мони Терм ЕООД",
-          "telephone": "+359886391729",
-          "email": "moni.term@abv.bg",
-          "url": "https://vuichovanio1.github.io/moniterm/",
-          "sameAs": ["https://www.facebook.com/profile.php?id=100063597367628", "https://www.google.com/maps?cid=4408469897849908317"],
-          "hasMap": "https://www.google.com/maps?cid=4408469897849908317",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "42.8081319",
-            "longitude": "23.2032583"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "ул. Славянска",
-            "addressLocality": "Костинброд",
-            "postalCode": "2230",
-            "addressRegion": "София област",
-            "addressCountry": "BG"
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100063597367628",
+        "https://www.google.com/maps?cid=4408469897849908317"
+      ],
+      "description": "Мони Терм ЕООД — газови котли, резервоари пропан-бутан, газови и водопроводни трасета, помпи, климатици, омекотители, ВИК и диамантено пробиване."
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness",
+      "name": "Мони Терм ЕООД",
+      "image": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
+      "telephone": "+359886391729",
+      "email": "moni.term@abv.bg",
+      "url": "https://vuichovanio1.github.io/moniterm/",
+      "hasMap": "https://www.google.com/maps?cid=4408469897849908317",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "42.8081319",
+        "longitude": "23.2032583"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Славянска",
+        "addressLocality": "Костинброд",
+        "postalCode": "2230",
+        "addressRegion": "София област",
+        "addressCountry": "BG"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100063597367628",
+        "https://www.google.com/maps?cid=4408469897849908317"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "София"
+        },
+        {
+          "@type": "City",
+          "name": "Костинброд"
+        },
+        {
+          "@type": "City",
+          "name": "Сливница"
+        },
+        {
+          "@type": "City",
+          "name": "Драгоман"
+        },
+        {
+          "@type": "City",
+          "name": "Годеч"
+        },
+        {
+          "@type": "City",
+          "name": "Божурище"
+        },
+        {
+          "@type": "City",
+          "name": "Своге"
+        },
+        {
+          "@type": "City",
+          "name": "Елин Пелин"
+        },
+        {
+          "@type": "City",
+          "name": "Банкя"
+        },
+        {
+          "@type": "City",
+          "name": "Нови Искър"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "София област"
+        }
+      ],
+      "parentOrganization": {
+        "@id": "https://vuichovanio1.github.io/moniterm/#organization"
+      },
+      "knowsAbout": [
+        "монтаж на газови котли",
+        "резервоари пропан-бутан",
+        "газови трасета",
+        "узаконяване на газови инсталации",
+        "водни помпи",
+        "водопроводни трасета",
+        "климатици",
+        "омекотителни системи",
+        "ВИК услуги",
+        "електродифузно заваряване РЕ-HD",
+        "диамантено пробиване"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vuichovanio1.github.io/moniterm/#website",
+      "url": "https://vuichovanio1.github.io/moniterm/",
+      "name": "Мони Терм ЕООД",
+      "publisher": {
+        "@id": "https://vuichovanio1.github.io/moniterm/#organization"
+      },
+      "inLanguage": "bg-BG"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Начало",
+          "item": "https://vuichovanio1.github.io/moniterm/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Изграждане на водопроводни трасета",
+          "item": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/#webpage",
+      "url": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/",
+      "name": "Водопроводни трасета в София област | Мони Терм",
+      "description": "Изграждане на водопроводни трасета в София и София област — от източника до сградата. Мони Терм ЕООД, Костинброд. Тел. 0886 391 729.",
+      "isPartOf": {
+        "@id": "https://vuichovanio1.github.io/moniterm/#website"
+      },
+      "about": {
+        "@id": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/#service"
+      },
+      "provider": {
+        "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness"
+      },
+      "inLanguage": "bg-BG",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://vuichovanio1.github.io/moniterm/images/moni21.jpg"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/#service",
+      "name": "Изграждане на водопроводни трасета",
+      "serviceType": "водопроводни трасета",
+      "description": "Изграждане на водопроводни трасета в София и София област — от източника до сградата. Мони Терм ЕООД, Костинброд. Тел. 0886 391 729.",
+      "url": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/",
+      "image": "https://vuichovanio1.github.io/moniterm/images/moni21.jpg",
+      "provider": {
+        "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "София"
+        },
+        {
+          "@type": "City",
+          "name": "Костинброд"
+        },
+        {
+          "@type": "City",
+          "name": "Сливница"
+        },
+        {
+          "@type": "City",
+          "name": "Драгоман"
+        },
+        {
+          "@type": "City",
+          "name": "Годеч"
+        },
+        {
+          "@type": "City",
+          "name": "Божурище"
+        },
+        {
+          "@type": "City",
+          "name": "Своге"
+        },
+        {
+          "@type": "City",
+          "name": "Елин Пелин"
+        },
+        {
+          "@type": "City",
+          "name": "Банкя"
+        },
+        {
+          "@type": "City",
+          "name": "Нови Искър"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "София област"
+        }
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/#webpage"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какъв е ценовият ориентир за водопроводни трасета?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ново водопроводно трасе се оферира според дължина, дълбочина и връзки. Няма смислена единна цена онлайн — след оглед даваме ясен обхват в лв."
           }
         },
-        "areaServed": ["София", "София област", "Костинброд", "Сливница", "Драгоман", "Годеч", "Божурище", "Своге", "Елин Пелин", "Банкя", "Нови Искър"],
-        "url": "https://vuichovanio1.github.io/moniterm/vodoprovodni-trasea/",
-        "description": "Изграждане на водопроводни трасета в София и София област — от източника до сградата. Мони Терм ЕООД, Костинброд. Тел. 0886 391 729.",
-        "image": "https://vuichovanio1.github.io/moniterm/images/moni21.jpg"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [{"@type": "Question", "name": "Какъв е ценовият ориентир за водопроводни трасета?", "acceptedAnswer": {"@type": "Answer", "text": "Ново водопроводно трасе се оферира според дължина, дълбочина и връзки. Няма смислена единна цена онлайн — след оглед даваме ясен обхват в лв."}},
-{"@type": "Question", "name": "Каква е разликата с ВИК услуги?", "acceptedAnswer": {"@type": "Answer", "text": "Водопроводните трасета са изграждане на тръбна мрежа. ВИК услугите покриват връзки, ремонти и локални монтажи."}},
-{"@type": "Question", "name": "Правите ли трасе към сондаж?", "acceptedAnswer": {"@type": "Answer", "text": "Да — често заедно с помпено оборудване."}},
-{"@type": "Question", "name": "Как да заявя?", "acceptedAnswer": {"@type": "Answer", "text": "0886 391 729"}}]
-      }
-    ]
-  }
+        {
+          "@type": "Question",
+          "name": "Каква е разликата с ВИК услуги?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Водопроводните трасета са изграждане на тръбна мрежа. ВИК услугите покриват връзки, ремонти и локални монтажи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Правите ли трасе към сондаж?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да — често заедно с помпено оборудване."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как да заявя?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "0886 391 729"
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

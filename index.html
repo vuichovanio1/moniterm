@@ -33,7 +33,7 @@
         "@type": "Organization",
         "@id": "https://vuichovanio1.github.io/moniterm/#organization",
         "name": "Мони Терм ЕООД",
-        "alternateName": ["Moni Term EOOD", "Мони Терм"],
+        "alternateName": ["Moni Term EOOD", "Мони Терм", "МОНИ ТЕРМ ЕООД"],
         "url": "https://vuichovanio1.github.io/moniterm/",
         "logo": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
         "telephone": "+359886391729",
@@ -53,7 +53,7 @@
         "description": "Мони Терм ЕООД — газови котли, резервоари пропан-бутан, газови и водопроводни трасета, помпи, климатици, омекотители, ВИК и диамантено пробиване."
       },
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness",
         "name": "Мони Терм ЕООД",
         "image": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
@@ -78,9 +78,19 @@
           "https://www.facebook.com/profile.php?id=100063597367628",
           "https://www.google.com/maps?cid=4408469897849908317"
         ],
+        "parentOrganization": { "@id": "https://vuichovanio1.github.io/moniterm/#organization" },
         "areaServed": [
-          {"@type": "AdministrativeArea", "name": "Sofia Province"},
-          {"@type": "City", "name": "Kostinbrod"}
+          {"@type": "City", "name": "София"},
+          {"@type": "City", "name": "Костинброд"},
+          {"@type": "City", "name": "Сливница"},
+          {"@type": "City", "name": "Драгоман"},
+          {"@type": "City", "name": "Годеч"},
+          {"@type": "City", "name": "Божурище"},
+          {"@type": "City", "name": "Своге"},
+          {"@type": "City", "name": "Елин Пелин"},
+          {"@type": "City", "name": "Банкя"},
+          {"@type": "City", "name": "Нови Искър"},
+          {"@type": "AdministrativeArea", "name": "София област"}
         ],
         "knowsAbout": [
           "монтаж на газови котли",
@@ -111,7 +121,12 @@
         "name": "Мони Терм ЕООД | Монтаж на газови и водопроводни системи",
         "isPartOf": { "@id": "https://vuichovanio1.github.io/moniterm/#website" },
         "about": { "@id": "https://vuichovanio1.github.io/moniterm/#organization" },
-        "description": "Мони Терм ЕООД — монтаж на газови и водопроводни системи за София и София област."
+        "description": "Мони Терм ЕООД — монтаж на газови и водопроводни системи за София и София област.",
+        "inLanguage": "bg-BG",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://vuichovanio1.github.io/moniterm/images/moni8.jpg"
+        }
       }
     ]
   }

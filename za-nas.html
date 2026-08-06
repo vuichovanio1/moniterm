@@ -22,15 +22,109 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "За нас | Мони Терм ЕООД",
-    "url": "https://vuichovanio1.github.io/moniterm/za-nas.html",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "Мони Терм ЕООД",
-      "telephone": "+359886391729",
-      "url": "https://vuichovanio1.github.io/moniterm/"
-    }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Начало", "item": "https://vuichovanio1.github.io/moniterm/"},
+          {"@type": "ListItem", "position": 2, "name": "За нас", "item": "https://vuichovanio1.github.io/moniterm/za-nas.html"}
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://vuichovanio1.github.io/moniterm/za-nas.html#webpage",
+        "name": "За нас | Мони Терм ЕООД",
+        "url": "https://vuichovanio1.github.io/moniterm/za-nas.html",
+        "description": "Мони Терм ЕООД от Костинброд: газови котли, резервоари пропан-бутан, трасета, помпи, климатици, омекотители и ВИК за София и областта.",
+        "isPartOf": { "@id": "https://vuichovanio1.github.io/moniterm/#website" },
+        "mainEntity": { "@id": "https://vuichovanio1.github.io/moniterm/#organization" },
+        "inLanguage": "bg-BG"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://vuichovanio1.github.io/moniterm/#organization",
+        "name": "Мони Терм ЕООД",
+        "alternateName": ["Moni Term EOOD", "Мони Терм"],
+        "url": "https://vuichovanio1.github.io/moniterm/",
+        "logo": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
+        "telephone": "+359886391729",
+        "email": "moni.term@abv.bg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Славянска",
+          "addressLocality": "Костинброд",
+          "postalCode": "2230",
+          "addressRegion": "София област",
+          "addressCountry": "BG"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100063597367628",
+          "https://www.google.com/maps?cid=4408469897849908317"
+        ],
+        "description": "Мони Терм ЕООД — газови котли, резервоари пропан-бутан, трасета, помпи, климатици, омекотители и ВИК за София и София област."
+      },
+      {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": "https://vuichovanio1.github.io/moniterm/#localbusiness",
+        "name": "Мони Терм ЕООД",
+        "telephone": "+359886391729",
+        "email": "moni.term@abv.bg",
+        "url": "https://vuichovanio1.github.io/moniterm/",
+        "image": "https://vuichovanio1.github.io/moniterm/images/logo.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Славянска",
+          "addressLocality": "Костинброд",
+          "postalCode": "2230",
+          "addressRegion": "София област",
+          "addressCountry": "BG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "42.8081319",
+          "longitude": "23.2032583"
+        },
+        "hasMap": "https://www.google.com/maps?cid=4408469897849908317",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100063597367628",
+          "https://www.google.com/maps?cid=4408469897849908317"
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "София"},
+          {"@type": "City", "name": "Костинброд"},
+          {"@type": "City", "name": "Сливница"},
+          {"@type": "City", "name": "Драгоман"},
+          {"@type": "City", "name": "Годеч"},
+          {"@type": "City", "name": "Божурище"},
+          {"@type": "City", "name": "Своге"},
+          {"@type": "City", "name": "Елин Пелин"},
+          {"@type": "City", "name": "Банкя"},
+          {"@type": "City", "name": "Нови Искър"},
+          {"@type": "AdministrativeArea", "name": "София област"}
+        ],
+        "knowsAbout": [
+          "монтаж на газови котли",
+          "резервоари пропан-бутан",
+          "газови трасета",
+          "узаконяване на газови инсталации",
+          "водни помпи",
+          "водопроводни трасета",
+          "климатици",
+          "омекотителни системи",
+          "ВИК услуги",
+          "електродифузно заваряване РЕ-HD",
+          "диамантено пробиване"
+        ],
+        "parentOrganization": { "@id": "https://vuichovanio1.github.io/moniterm/#organization" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vuichovanio1.github.io/moniterm/#website",
+        "url": "https://vuichovanio1.github.io/moniterm/",
+        "name": "Мони Терм ЕООД",
+        "publisher": { "@id": "https://vuichovanio1.github.io/moniterm/#organization" }
+      }
+    ]
   }
   </script>
 </head>
