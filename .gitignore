@@ -11,6 +11,8 @@ __pycache__/
 cookies.txt
 **/cookies.txt
 images/facebook/
+# Raw Facebook dump (selected copies are moni21+.jpg)
+images/fb-new/
 
 # Local tooling
 .vs/
