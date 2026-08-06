@@ -254,39 +254,35 @@ p {
   display: block;
 }
 
-.fb-float {
+.call-float {
   position: fixed;
   z-index: 80;
-  left: 1rem;
-  bottom: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.75rem 1.05rem;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
   border-radius: 999px;
-  background: #1877f2;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0f1726;
   color: #fff !important;
-  font-weight: 700;
-  font-size: 0.95rem;
-  box-shadow: 0 10px 28px rgba(24, 119, 242, 0.45);
-  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+  transition: background 0.2s, transform 0.15s, border-color 0.2s;
 }
 
-.fb-float:hover {
-  background: #166fe5;
-  transform: translateY(-2px);
-}
-
-.fb-float .fb-icon {
-  width: 20px;
-  height: 20px;
+.call-float:hover {
+  background: #141f33;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 760px) {
-  .fb-float {
-    left: 0.75rem;
+  .call-float {
+    right: 0.7rem;
     bottom: 0.85rem;
-    padding: 0.7rem 0.95rem;
+    width: 40px;
+    height: 40px;
   }
 }
 

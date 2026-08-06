@@ -496,11 +496,12 @@ def fb_btn(extra_class: str = "", label: str = "Вижте ни във Facebook"
     )
 
 
-def fb_float() -> str:
+def call_float() -> str:
     return (
-        f'<a class="fb-float" href="{FB}" target="_blank" rel="noopener noreferrer" '
-        f'aria-label="Вижте ни във Facebook — Мони Терм ЕООД">'
-        f"{FB_ICON}<span>Facebook</span></a>"
+        f'<a class="call-float" href="tel:{TEL}" aria-label="Обадете се на Мони Терм ЕООД">'
+        '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">'
+        '<path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 4a1 1 0 0 1 1-1h3.46a1 1 0 0 1 1 1c0 1.24.2 2.45.58 3.6a1 1 0 0 1-.24 1l-2.2 2.2Z"/>'
+        "</svg></a>"
     )
 
 
@@ -732,7 +733,7 @@ def footer(depth: int, credit_kind: str = "default") -> str:
       </div>
     </div>
   </footer>
-{fb_float()}
+{call_float()}
   <script src="{p}js/main.js" defer></script>"""
 
 
